@@ -1,0 +1,117 @@
+@charset "UTF8";
+
+@font-face {
+    font-family: 'cabeçalho';
+    src: url(estilo/Mogent.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url(estilo/02_APompadourTextSample.ttf) format(truetype) url(estilo/03_APompadourBoldSample.otf) format(opentype);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+    --corturquesa: rgb(106, 208, 255);
+}
+
+
+@media all and (min-width: 800px) and (max-width: 989px) { /*para tablets grandes*/ 
+
+}
+
+@media all and (min-width: 530px) and (max-width: 799px) { /*para tablets pqnos*/ 
+    main{
+        width: 700px;
+
+        flex-direction: column; /*foto foi p baixo*/
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    main p{
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .main-content{
+        width: 100%;
+        align-items: center;
+
+        margin-bottom: 5%;
+    }
+
+    main h1{
+        margin-bottom: 3%;
+    }
+
+    .cards img{
+        width: 100px;
+        height: 100px;
+    }
+
+    figure img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    
+}
+
+@media all and (min-width: 450px ) and (max-width: 529px) { /*para celular*/ 
+    /*header{
+        width: 460px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }*/
+
+    header h1{
+        font-size: 2em;
+    }
+    header nav{
+        margin-top: 24px;
+    }
+
+    header nav a{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    main{
+        width: 450px;
+        
+    }
+    main h1{
+        margin-bottom: 3%;
+        font-size: 1.3em;
+    
+    }
+    
+    .cards-conteiner{
+        width: 100%;
+        align-items: center;
+    }
+
+    .cards img{
+        width: 60px;
+        height: 60px;
+    }
+
+    figure img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    /*footer{
+        width: 461px;
+    }*/
+}
