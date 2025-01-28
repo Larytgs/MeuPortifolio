@@ -29,6 +29,8 @@
     --weight-regular: 400;
     --weight-medium: 500;
 
+    --section-spacing: 70px;
+
     --border-white: hsla(0, 0%, 100%, 1);
     --border-light-gray: hsla(240, 1%, 83%, 1);
     --border-gainsboro: hsla(220, 13%, 91%, 1);
@@ -96,6 +98,7 @@ main{
     display: flex; /*coloquei na lateral os icones*/
     align-items: center; /*centralizar os icones*/
     justify-content: space-between; /*espaçamento igual*/
+    margin-bottom: 10%;
 
     width: 90%;
     box-sizing: border-box;
@@ -177,18 +180,27 @@ figcaption{
 
 
 .service {
-    border-block-start: 1px solid var(--border-eerie-black);
+    border-block: 1px solid var(--border-eerie-black);
     margin-block-start: var(--section-spacing);
 
-    margin-top: 50px;
     text-align: center;
+
+    width: 100%;
+    box-sizing: content-box;
+    margin: auto;
 }
 
 .container{
-    display: inline-flex;
+    flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+    
+    width: 90%;
+    box-sizing: border-box;
 }
 .container ul{
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -199,15 +211,11 @@ figcaption{
 .container li{
     list-style: none; /*tirar o icone do type da lista*/
 }
-.service-item { 
-    border-block-end: 1px solid var(--border-eerie-black); 
-}
 
 .service-card {
     position: relative; /*centralizar o texto na imagem*/
     padding-block: 45px;
 }
-
 .service-card .card-icon {
     max-width: max-content;
     margin-inline: auto;
