@@ -206,13 +206,6 @@ figcaption{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 .container-service li{
     list-style: none; /*tirar o icone do type da lista*/
@@ -306,8 +299,9 @@ figcaption{
     box-sizing: content-box;
 }
 .tab-tbn-list{ /*os botoes de cima*/
-    display: inline;
-    
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
 .tab-btn, .tab-btn-item { /*cada botao*/
     font-size: 1.5em;
@@ -373,7 +367,7 @@ figcaption{
 }
 .about-list .nome, .email{
     font-size: 2em;
-    text-decoration: underline var(--corturquesa);
+    text-decoration: underline var(--border-light-gray);
     text-align: left;
 }
 .about-list .spantitle{
