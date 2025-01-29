@@ -315,7 +315,9 @@ figcaption{
 .tab-btn:is(:hover, :focus-visible) { 
     background: var(--bg-eerie-black); 
 }
-
+#tabela1, #tabela2, #tabela3{
+    margin-top: 2%;
+}
 
 .tab-content { /*tabelas de dentro*/
     /*display: none;*/
