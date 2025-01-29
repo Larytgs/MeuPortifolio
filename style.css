@@ -48,6 +48,8 @@ html, body{
     height: 100vh;
     background-color: #333;
     color: white;
+    scroll-behavior: smooth; /*rolagem suave*/  
+    width: 100vw; /* 100% da largura da viewport */
 }
 
 header{
@@ -55,22 +57,26 @@ header{
     background-color: #181717;
     padding: 12px;
 
+    position: sticky; /*grudavel*/
+    top: -1px;
+    z-index: 1; /*Assim, ele ficará na frente de tds*/
+
     display: flex; /*coloquei na lateral os icones*/
     align-items: center; /*centralizar os icones*/
     justify-content: space-between; /*espaçamento igual*/
 }
 
-header h1{
+header h1 a{
+    text-decoration: none;
     color: var(--corturquesa);
     font-family: 'cabeçalho';
 }
-header h1:hover{
+header h1 a:hover{
     color: white;
     cursor: pointer;
 }
 header nav{
-    display: flex; /*para deixar em linha*/
-    align-items: center; /*alinhado do centro verticalmente*/
+    box-sizing: border-box;
 } 
 header nav a{
     margin-right: 1em;
@@ -107,7 +113,7 @@ main{
 #first{
     margin: auto;
 }
-.title{ /*titulo com o meu nome*/
+.main-content .title{ /*titulo com o meu nome*/
     line-height: 0.8;
     font-size: 3em;
     font-weight: 500;
@@ -190,13 +196,13 @@ figcaption{
     margin: auto;
 }
 
-.container{
+.container-service{
     flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
     
     width: 90%;
     box-sizing: border-box;
 }
-.container ul{
+.container-service ul{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -208,7 +214,7 @@ figcaption{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-.container li{
+.container-service li{
     list-style: none; /*tirar o icone do type da lista*/
 }
 
@@ -263,7 +269,7 @@ figcaption{
 }*/
 
 
-#tecno{
+/*#tecno{
     width: 100%;
     box-sizing: content-box;
 }
@@ -291,9 +297,130 @@ figcaption{
     box-shadow: 0px 0px 8px 0px var(--corturquesa);
     transition-duration: 0.3s;
     border-radius: 30px;
+}*/
+
+
+.tab-container { /*a tabela inteira*/
+    border: 1px solid red; 
+    width: 95%;
+    box-sizing: content-box;
+}
+.tab-tbn-list{ /*os botoes de cima*/
+    margin: auto;
+    display: inline;
+}
+.tab-btn-item{ /*cada botao*/
+    list-style: none; /*tirar o icone do type da lista*/
+}
+.tab-btn { /*button*/
+    font-size: 2.5em;
+    padding: 16px;
+    border-block-end: 1px solid var(--border-eerie-black);
+    transition: var(--transition-1);
+    cursor: pointer;
+}
+.tab-btn:is(:hover, :focus-visible) { 
+    background: var(--bg-eerie-black); 
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+}
+.tab-content.active {
+    display: block;
+    animation: fade 500ms linear forwards;
+}
+@keyframes fade {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+
+.tab-content .grid-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+}
+.about-content{
+    margin: auto;
+    text-align: center;
+}
+.tab-content .primeiro-title{ 
+    margin-block-end: 20px; 
+    font-size: 2em;
+    color: var(--corturquesa);
+}
+.tab-content .section-text{
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.about-list ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.about-content li{
+    list-style: none; /*tirar o icone do type da lista*/
+}
+
+.about-list .nome, .email{
+    font-size: 2em;
+    text-decoration: underline var(--corturquesa);
+    text-align: left;
+}
+.about-list .spantitle{
+    line-height: 2.5;
+    font-size: 1em;
 }
 
 
+
+
+
+
+.skill-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 30px 12px;
+}
+
+.skill-wrapper .span {
+    font-family: var(--fontFamily-oxanium);
+    font-weight: var(--weight-medium);
+}
+
+.progress-bar {
+    background-color: var(--bg-smoky-black);
+    height: 4px;
+}
+
+.progress-fill {
+    background-color: var(--bg-white);
+    height: 100%;
+}
+
+
+footer .scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+}
+#botao-top {
+    cursor: pointer;
+}
 
 
 footer{

@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Dev.Tgs</h1>
+    <header id="header">
+        <h1><a href="#header">Dev.Tgs</a></h1>
 
         <nav>
             <a href="https://github.com/Larytgs" target="_blank">
@@ -26,16 +26,17 @@
                 <img src="img/logo/instagram.png" alt="">
             </a>
 
-            <a href="https://www.facebook.com/profile.php?id=100005260008271" target="_blank">
-                <img src="img/logo/facebook.png" alt="">
+            <!--<a href="https://www.facebook.com/profile.php?id=100005260008271" target="_blank">
+                <img src="img/logo/facebook.png" alt="">-->
             </a>
         </nav>
     </header>
+
     <main>
         <section class="main-content">
             <article id="first">
                 <article>
-                    <h1 class="h1 title">Laryssa Tortato Gomes da Silva
+                    <h1 class="title">Laryssa Tortato Gomes da Silva
                         <br>
                         <span>Desenvolvedora Web Front end</span>
                     </h1>
@@ -46,12 +47,7 @@
                     </div>
                 </article>
             </article>    
-                    <!--<div>
-                        <p>Olá, me chamo Laryssa (ou Lary😜), tenho 25 anos e sou de Curitiba. Sou graduada em Análises e desenvolvimento de 
-                            sistemas, estudo programação desde 2020, com ênfase em desenvolvimento web.</p>
-                        <p>Estou fazendo cursos complementares, sobre Python, PHP, HTML5, CSS3, atualmente sobre JavaScript, para crescimento 
-                            profissional e desenvolvimento de minhas habilidades.</p> 
-                    </div>-->
+                   
                     
                     <!--<div id="links">
                         <p>Se quiser saber mais sobre mim, acessa os links abaixo: </p>
@@ -91,7 +87,7 @@
         
         
         <section class="service">
-            <div class="container">
+            <div class="container-service">
                 <ul>
                     <li class="service-item">
                         <div class="service-card">
@@ -128,10 +124,152 @@
                 </ul>
             </div>
         </section>
+
+        <section >
+            <div class="tab-container">
+                <ul class="tab-btn-list">
+                    <li class="tab-btn-item">
+                        <button class="tab-btn" data-tab-btn="about">Apresentação</button>
+                    </li>
+                    <li class="tab-btn-item">
+                        <button class="tab-btn" data-tab-btn="skillset">Habilidades</button>
+                    </li>
+                    <li class="tab-btn-item">
+                        <button class="tab-btn" data-tab-btn="exhibition">Exposição</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content active" data-tab-content="about">
+                    <div class="grid-list">
+                        <figure class="about-banner img-holder" data-tilt>
+                            <img src="img/logo/minhafoto.jpg" width="400px"  loading="lazy" alt="about banner"
+                            class="img-cover">
+                        </figure>
+                        <div class="about-content">
+                            <h2 class="primeiro-title">
+                            Um palco muito pequeno num vasto cósmico.
+                            </h2>
+                            <p class="section-text">
+                                Olá, me chamo Laryssa (ou Lary😜), tenho 26 anos e sou de Itapoá. 
+                                <br><br>Sou graduada em Análises e desenvolvimento de sistemas, estudo programação desde 2020, com ênfase em desenvolvimento web.</p>
+                            
+                            <ul class="about-list">
+                                <li class="about-item">
+                                    <p class="nome">Nome</p>
+                                    <span class="spantitle">Laryssa Tortato Gomes da Silva</span>
+                                </li>
+                                <li class="about-item">
+                                    <p class="email">Email</p>
+                                    <span class="spantitle">siteslarytgs@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tab-content" data-tab-content="skillset">
+                    <div class="grid-list">
+                        <div class="skill-content">
+                            <h3 class="h4 title section-title">
+                            Aprendizado Contínuo.
+                            </h3>
+                            <p class="section-text">
+                            Como Desenvolvedor Web Front-end, acredito na importância do aprendizado contínuo e estou constantemente aprimorando minhas habilidades. Estou fazendo cursos complementares, como Python, PHP, HTML5, CSS3, atualmente sobre JavaScript. Além disso, sou proativa, resolvo problemas 
+                            de forma eficaz e valorizo o trabalho em equipe para entregar resultados de alta qualidade.
+                            </p>
+                            <ul class="skill-list">
+                            <li>
+                                <div class="skill-wrapper">
+                                    <span class="span">Proatividade e Determinação</span>
+                                    <span class="value">100%</span>
+                                </div>
+                                <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-wrapper">
+                                <span class="span">Desenvolvimento de Websites e Softwares</span>
+                                <span class="value">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-wrapper">
+                                <span class="span">Web Design</span>
+                                <span class="value">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                        <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                            <img src="img/logo/minhafoto.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                            class="img-cover">
+                        </figure>
+                    </div>
+                    
+
+                    <div class="tab-content" data-tab-content="exhibition">
+                        <ul class="grid-list">
+                            <li>
+                                <div class="exhibition-card">
+                                <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                                    <img src="" width="376" height="200" loading="lazy" alt="image"
+                                    class="img-cover">
+                                </figure>
+                                <div class="card-icon">
+                                    <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exhibition-card">
+                                <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                                    <img src="" width="376" height="200" loading="lazy" alt="image"
+                                    class="img-cover">
+                                </figure>
+                                <div class="card-icon">
+                                    <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exhibition-card">
+                                <figure class="card-banner img-holder" style="--width: 376; --height: 200;" data-tilt>
+                                    <img src="" width="376" height="200" loading="lazy" alt="image"
+                                    class="img-cover">
+                                </figure>
+                                <div class="card-icon">
+                                    <ion-icon name="image-outline" aria-hidden="true"></ion-icon>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="https://github.com/Larytgs" class="btn btn:hover" style="margin-top: 40px;">
+                            <span class="span">Ver mais</span><ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         &copy; Laryssa Tortato Gomes da Silva 
+
+        <div class="scroll-top">
+            <a id="botao-top" onclick="scrollToTop()"><img src="img/setapcima.png" alt="">
+            </a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
