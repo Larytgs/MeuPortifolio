@@ -348,7 +348,7 @@ figcaption{
 .about-banner img{
     width: 350px; height: 350px;
 }
-.about-content{
+.about-content{                      /*texto 1 sobre mim*/
     margin: auto;
     text-align: center;
 }
@@ -357,7 +357,7 @@ figcaption{
     font-size: 2em;
     color: var(--corturquesa);
 }
-.tab-content .section-text{ /*texto sobre mim*/
+.tab-content .section-text{         
     font-size: 1.1em;
     text-align: left;
     padding: 20px 0px;
@@ -371,7 +371,6 @@ figcaption{
 .about-content li{
     list-style: none; /*tirar o icone do type da lista*/
 }
-
 .about-list .nome, .email{
     font-size: 2em;
     text-decoration: underline var(--corturquesa);
@@ -383,31 +382,44 @@ figcaption{
 }
 
 
-.skill-content{
-    
+.habilidades{                 /*texto 2 sobre aprendizado*/
+    margin: auto;
+    text-align: center;
 }
-
-.skill-wrapper {
+.section-title{
+    margin-block-end: 20px; 
+    font-size: 2em;
+    color: var(--corturquesa);
+}
+.section-text{
+    font-size: 1.1em;
+    text-align: left;
+    padding: 20px 0px;
+}
+.skill-list li{
+    list-style: none; /*tirar o icone do type da lista*/
+}
+.skill-wrapper { /*cada item da lista*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-block: 30px 12px;
 }
-
-.skill-wrapper .span {
+.skill-wrapper .span { /*nomes da lista*/
     font-family: var(--fontFamily-oxanium);
     font-weight: var(--weight-medium);
 }
 
-.progress-bar {
-    background-color: var(--bg-smoky-black);
+.progress-bar { /*linha*/
+    background-color: var(--border-smoky-black);
     height: 4px;
 }
-
-.progress-fill {
-    background-color: var(--bg-white);
+.progress-fill { /*linha*/
+    background-color: var(--corturquesa);
     height: 100%;
 }
+
+
 
 
 footer .scroll-top {
