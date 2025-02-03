@@ -294,11 +294,12 @@ figcaption{
 
 
 .tab-container { /*a tabela inteira*/
-    width: 95%;
     box-sizing: content-box;
+    width: 99.7%;
+    border: 1px solid red;
 }
 .tab-tbn-list{ /*os botoes de cima*/
-    display: flex;
+    display: ruby;
     justify-content: space-evenly;
     text-align: center;
 }
