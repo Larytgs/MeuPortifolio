@@ -135,14 +135,15 @@ main{
     box-sizing: border-box;
     
     text-decoration: none;
-    color: white;
-    background-color: #0f0f0f;
-    padding: 10px 15px;
-    border-radius: 10%;
+    color: white; background-color: #0f0f0f;
+    padding: 15px;
+    border-radius: 40%;
     margin: 20px;
 }
 .down a:hover{
     cursor: pointer;
+    background-color: white; color: black;
+    transition-duration: 1.5s;
 }
 .down p{
     color: #797676;
