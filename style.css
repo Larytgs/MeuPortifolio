@@ -331,7 +331,6 @@ figcaption{
 /*tabelas de dentro*/
 .tab-content {               
     padding: 30px;
-    border: 1px solid red;
 }
 
 /*tabela 1*/
@@ -423,31 +422,45 @@ figcaption{
 
 
 /*tabela 3*/
+#tabela3{
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+    border: 1px solid red;
+}
 .exposição h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.exposição{
     text-align: center;
 }
 .exposição .cards{  
     display: flex;
-    flex-direction: column;
-    gap: 3.2rem
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha caso necessário */
 }
 .cards .card{
+    width: 500px;
+    padding: 30px; margin: 10px;
+    flex-grow: 1;
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.267) -1rem 1rem 1rem;
-    padding: 2.8rem;
-    background: var(--secundary-color);
-    border-radius: 0.6rem;
-    transition: 400ms;
+    background: #0d0d0d;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card:hover {
+    background: #ffffff1a;
 }
 .card img{
-    width: 10rem;
+    width: 5rem;
 }
 .card h3{
-    margin-block: 1.6rem;
+    margin: 10px 0px;
+    font-size: 1.5em;
 }
 .card p{
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.2em;
     line-height: 130%;
     color: var(--paragraph);
 }
@@ -461,7 +474,9 @@ figcaption{
 .exposição .btn span{
     color: white;
     cursor: pointer;
-    
+}
+.exposição .btn span:hover{
+    text-decoration: underline;
 }
 
 
