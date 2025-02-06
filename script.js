@@ -1,6 +1,6 @@
 
 // tab content
-const tabBtns = document.querySelectorAll("[data-tab-btn]");
+/*const tabBtns = document.querySelectorAll("[data-tab-btn]");
 const tabContents = document.querySelectorAll("[data-tab-content]");
 
 let lastActiveTabBtn = tabBtns[0];
@@ -23,7 +23,7 @@ const filterContent = function () {
   }
 }
 
-addEventOnElements(tabBtns, "click", filterContent);
+addEventOnElements(tabBtns, "click", filterContent);*/
 
 
 //Parte da seta subindo

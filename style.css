@@ -10,6 +10,10 @@
     src: url(estilo/02_APompadourTextSample.ttf) format(truetype) url(estilo/03_APompadourBoldSample.otf) format(opentype);
 }
 
+:target {
+    scroll-margin-top: 5em;  /*para ele rolar no lugar certo qnd clica num botao*/
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -92,10 +96,8 @@ header nav img:hover{
 
 
 main{
-    width: 100vw;
     box-sizing: content-box;
-    
-    padding: 20px;
+
     background-color: #000000;
     padding-top: 4%;
 }
@@ -104,9 +106,8 @@ main{
     display: flex; /*coloquei na lateral os icones*/
     align-items: center; /*centralizar os icones*/
     justify-content: space-between; /*espaçamento igual*/
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 
-    width: 90%;
     box-sizing: border-box;
 }
 
@@ -191,10 +192,7 @@ figcaption{
     margin-block-start: var(--section-spacing);
 
     text-align: center;
-
-    width: 100%;
     box-sizing: content-box;
-    margin: auto;
 }
 
 .container-service{
@@ -294,50 +292,50 @@ figcaption{
 }*/
 
 
+#tabGithub{
+    text-align: center;
+    margin: 0%;
+    margin: 5% 0%;
+}
+
+
+/*Tabela para baixo*/
 .tab-container { /*a tabela inteira*/
     box-sizing: content-box;
-    width: 99.7%;
-    border: 1px solid red;
 }
-.tab-tbn-list{ /*os botoes de cima*/
-    display: ruby;
-    justify-content: space-evenly;
+.tab-container ul{
     text-align: center;
 }
-.tab-btn, .tab-btn-item { /*cada botao*/
-    font-size: 1.5em;
-    padding: 5px;
+.tab-container .tab-btn-item{ /*os botoes de cima*/
+    display: inline-block;
+    margin: 2% 0%;
+    list-style: none; /*tirar o icone do type da lista*/
     border-radius: 10px;
     transition: var(--transition-1);
+}
+.tab-btn-item .tab-btn{ /*cada botao*/
+    font-size: 2em;
+    padding: 10px 130px;
     cursor: pointer;
-
-    list-style: none; /*tirar o icone do type da lista*/
+    transition-duration: 0.5s;
 }
 .tab-btn:is(:hover, :focus-visible) { 
     background: var(--bg-eerie-black); 
 }
+
 #tabela1, #tabela2, #tabela3{
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
-.tab-content { /*tabelas de dentro*/
-    /*display: none;*/
+
+/*tabelas de dentro*/
+.tab-content {               
     padding: 30px;
-}
-.tab-content .active {
-    display: block;
-    animation: fade 500ms linear forwards;
-}
-@keyframes fade {
-    0% { 
-        opacity: 0; 
-    }
-    100% { 
-        opacity: 1; 
-    }
+    border: 1px solid red;
 }
 
-.tab-content .tabelas { /*todas as tabelas*/
+/*tabela 1*/
+.tabelas {    
     display: flex;
     gap: 30px;
     flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
@@ -349,18 +347,17 @@ figcaption{
     margin: auto;
     text-align: center;
 }
-.tab-content .primeiro-title{
-    margin-block-end: 20px; 
+.tab-content .primeiro-title{      /*primeiro titulo*/
+    margin-bottom: 5%;
     font-size: 2em;
     color: var(--corturquesa);
 }
-.tab-content .section-text{         
+.tab-content .section-text{      /*primeiro texto*/
     font-size: 1.1em;
     text-align: left;
     padding: 20px 0px;
 }
-
-.about-list { /*a ul*/
+.about-list {                /*a ul*/
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -378,20 +375,28 @@ figcaption{
     font-size: 1em;
 }
 
-
+/*tabela 2*/
 .habilidades{                 /*texto 2 sobre aprendizado*/
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+}
+.habilidades .textHabilidade{
     margin: auto;
     text-align: center;
 }
-.section-title{
+.habilid-title{                  /*primeiro titulo*/
     margin-block-end: 20px; 
     font-size: 2em;
     color: var(--corturquesa);
 }
-.section-text{
+.habilid-text{                  /*texto 1 sobre mim*/
     font-size: 1.1em;
     text-align: left;
-    padding: 20px 0px;
+    margin: 20px;
+}
+.skill-list{
+    margin: 20px;
 }
 .skill-list li{
     list-style: none; /*tirar o icone do type da lista*/
@@ -416,6 +421,48 @@ figcaption{
     height: 100%;
 }
 
+
+/*tabela 3*/
+.exposição h2{
+    text-align: center;
+}
+.exposição .cards{  
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem
+}
+.cards .card{
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.267) -1rem 1rem 1rem;
+    padding: 2.8rem;
+    background: var(--secundary-color);
+    border-radius: 0.6rem;
+    transition: 400ms;
+}
+.card img{
+    width: 10rem;
+}
+.card h3{
+    margin-block: 1.6rem;
+}
+.card p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 130%;
+    color: var(--paragraph);
+}
+
+.exposição .btn{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+}
+.exposição .btn span{
+    color: white;
+    cursor: pointer;
+    
+}
 
 
 
