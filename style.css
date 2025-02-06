@@ -158,29 +158,41 @@ main{
     width: 500px;
 }
 
-figure{ /*minha imagem*/
+#minhafoto{ /*minha imagem*/
     position: relative; /*para o figcaption fique embaixo da imagem*/
     margin: auto; margin-left: -50px;
 }
-figure img{
+figure #img{
     width: 350px;
     height: 350px;
     border-radius: 20% 10px;
     border: 1px solid var(--corturquesa);
 
     filter: brightness(70%); /*deixar a imagem mais escura*/
+    animation: flutuar 2.5s infinite backwards;
 }
-figure img:hover{
+figure #img:hover{
     box-shadow: 0px 0px 8px var(--corturquesa);
     cursor: pointer;
 }
 figcaption{
     position: absolute; /*para o figcaption fique em cima da imagem*/
-    top: 90%; /*alinhar em baixo da imagem*/
+    top: 89%; /*alinhar em baixo da imagem*/
     left: 25%; /*alinhar no meio da imagem*/
 
     min-width: max-content;
     color: rgba(255, 255, 255, 0.432);
+}
+@keyframes flutuar{
+    0% {
+        transform: translateY(1rem); /* Move para baixo */
+    }
+    50% {
+        transform: translateY(-0.5rem); /* Move para cima */
+    }
+    100% {
+        transform: translateY(1rem); /* Move para baixo */
+    }
 }
 
 
@@ -293,8 +305,13 @@ figcaption{
     gap: 30px;
     flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
 }
-.about-banner img{
-    width: 350px; height: 350px;
+.img-holder img{
+    width: 450px;
+    margin: 20px;
+}
+.img-holder:hover{
+    box-shadow: 0px 0px 8px var(--corturquesa);
+    cursor: pointer;
 }
 .about-content{                      /*texto 1 sobre mim*/
     margin: auto;
@@ -373,6 +390,11 @@ figcaption{
 .progress-fill { /*linha*/
     background-color: var(--corturquesa);
     height: 100%;
+}
+
+.img-holder img{
+    width: 450px;
+    margin: 20px;
 }
 
 
