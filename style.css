@@ -19,16 +19,15 @@
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
+
 :root{
     --corturquesa: rgb(106, 208, 255);
+    --fundoBlack: #000000;
+    --headerFotter: #181717;
+    --fundoDestaque: #797676;
+    --fundoDestaque2: #333;
 
-    --bg-white: hsla(0, 0%, 100%, 1);
-    --bg-light-gray: hsla(240, 1%, 83%, 1);
-    --bg-jet: hsla(0, 0%, 18%, 1);
     --bg-eerie-black: hsla(0, 0%, 13%, 1);
-    --bg-rich-black-fogra-29: hsla(229, 23%, 9%, 1);
-    --bg-smoky-black: hsla(0, 0%, 6%, 1);
-    --bg-black: hsla(0, 0%, 0%, 1);
 
     --weight-regular: 400;
     --weight-medium: 500;
@@ -46,11 +45,15 @@
     --transition-3: 1000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
 }
 
+:target {
+    scroll-margin-top: 5em;
+}
+
 
 html, body{
     overflow-x: hidden; 
     height: 100vh;
-    background-color: #333;
+    background-color: var(--fundoBlack);
     color: white;
     scroll-behavior: smooth; /*rolagem suave*/  
     width: 100vw; /* 100% da largura da viewport */
@@ -58,7 +61,7 @@ html, body{
 
 header{
     text-align: center;
-    background-color: #181717;
+    background-color: var(--headerFotter);
     padding: 12px;
 
     position: sticky; /*grudavel*/
@@ -97,22 +100,19 @@ header nav img:hover{
 
 main{
     box-sizing: content-box;
-    background-color: #000000;
     padding-top: 4%;
 }
 
 .main-content{
-    justify-content: space-around;
+    margin-bottom: 5%; padding: 20px;
+    text-align: center; /*centralizar os icones na horizontal*/
 }
 .main-content section{
     display: flex; /*coloquei na lateral os icones*/
-    align-items: center; /*centralizar os icones*/
     justify-content: space-between; /*espaçamento igual*/
-    margin-bottom: 5%;
-
-    box-sizing: border-box;
+    align-items: center; /*centralizar os icones na vertical*/
     
-    border: 1px solid red;
+    box-sizing: border-box;
 }
 
 #first{
@@ -128,7 +128,7 @@ main{
 }
 .title span{ /*subtitulo*/
     font-size: 0.6em;
-    color: #797676;
+    color: var(--fundoDestaque);
 }
 
 .down{ /*download da CV*/
@@ -148,23 +148,23 @@ main{
 }
 .down a:hover{
     cursor: pointer;
-    background-color: #333; 
+    background-color: var(--fundoDestaque2); 
     transition-duration: 0.5s;
 }
 .down p{
-    color: #797676;
+    color: var(--fundoDestaque);
     display: block;
     font-size: 1.4em;
     width: 500px;
 }
 
 figure{ /*minha imagem*/
-    position: relative; /*para o figcaption fique em cima da imagem*/
-    margin: 15px;
+    position: relative; /*para o figcaption fique embaixo da imagem*/
+    margin: auto; margin-left: -50px;
 }
 figure img{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 20% 10px;
     border: 1px solid var(--corturquesa);
 
@@ -173,19 +173,18 @@ figure img{
 figure img:hover{
     box-shadow: 0px 0px 8px var(--corturquesa);
     cursor: pointer;
-    
 }
 figcaption{
-    position: absolute;
+    position: absolute; /*para o figcaption fique em cima da imagem*/
     top: 90%; /*alinhar em baixo da imagem*/
     left: 25%; /*alinhar no meio da imagem*/
 
     min-width: max-content;
-    color: rgba(255, 255, 255, 0.644);
+    color: rgba(255, 255, 255, 0.432);
 }
 
 
-
+/*botoes soltos*/
 .service {
     border-block: 1px solid var(--border-eerie-black);
     margin-block-start: var(--section-spacing);
@@ -196,7 +195,6 @@ figcaption{
 
 .container-service{
     flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
-
     box-sizing: border-box;
 }
 .container-service ul{
@@ -238,12 +236,12 @@ figcaption{
     opacity: 1; /*mover o texto p cima da imagem*/
     transform: translate(-50%, -50%);
 }
-
 .service-card:is(:hover, :focus-visible) .card-icon { 
     opacity: 0; /*para sumir a imagem, enquanto mostra o texto*/
 }
 
 
+/*tabelas do github*/
 #tabGithub{
     text-align: center;
     margin: 0%;
@@ -255,6 +253,8 @@ figcaption{
 .tab-container { /*a tabela inteira*/
     box-sizing: content-box;
 }
+
+/*Os botoes de cima*/
 .tab-container ul{
     text-align: center;
 }
@@ -272,11 +272,12 @@ figcaption{
     transition-duration: 0.5s;
 }
 .tab-btn:is(:hover, :focus-visible) { 
-    background: var(--bg-eerie-black); 
+    background: var(--fundoDestaque2); 
 }
 
 #tabela1, #tabela2, #tabela3{
     margin-top: 1%;
+    margin-bottom: 4%;
 }
 
 
@@ -284,6 +285,7 @@ figcaption{
 .tab-content {               
     padding: 30px;
 }
+
 
 /*tabela 1*/
 .tabelas {    
@@ -325,6 +327,7 @@ figcaption{
     line-height: 2.5;
     font-size: 1em;
 }
+
 
 /*tabela 2*/
 .habilidades{                 /*texto 2 sobre aprendizado*/
@@ -378,9 +381,11 @@ figcaption{
     margin-inline: auto;
     padding-inline: 2.4rem;
 }
-.exposição h2{
+.exposição h2{      /*primeiro titulo*/
     text-align: center;
+    font-size: 2em;
     margin-bottom: 20px;
+    color: var(--corturquesa);
 }
 .exposição{
     text-align: center;
@@ -400,7 +405,7 @@ figcaption{
     cursor: pointer;
 }
 .card:hover {
-    background: #ffffff1a;
+    background: var(--fundoDestaque2);
 }
 .card img{
     width: 5rem;
@@ -445,7 +450,7 @@ footer .scroll-top {
 footer{
     text-align: center;    
     color: white;
-    background-color: #181717;
+    background-color: var(--headerFotter);
     padding: 14px;
 }
 
