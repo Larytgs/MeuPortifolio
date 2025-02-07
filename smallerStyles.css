@@ -686,7 +686,10 @@
         margin: auto;
     }
     .down a{ 
-        background-color: #2c2c2c8e;
+        background-color: rgba(0, 255, 255, 0.363);
+    }
+    .down a:hover{
+        background-color: rgba(0, 255, 255, 0.363);
     }
     .down a img{
         width: 15px; 
@@ -732,12 +735,22 @@
         width: 350px;
     }
 
+
     /*botoes soltos*/
-    .service-card .card-title {
-        font-size: 1.1em;
-        display: flex;
-        flex-direction: column;
+    .container-service ul{
+        display: block;
+        columns: 2;
+        align-items: center;
     }
+    .container-service li{
+        margin: 5px;
+        text-align: center;
+    }
+    .service-card .card-title {
+        font-size: 1.4em;
+        line-height: 1;
+    }
+
 
     /*Os botoes de cima*/
     .tab-btn-item .tab-btn{ /*cada botao*/
@@ -745,6 +758,7 @@
         padding: 10px 45px;
         margin-bottom: 0%;
     }
+
 
     /*tabelas de dentro*/
     .tab-content {               
