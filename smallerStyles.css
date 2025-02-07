@@ -294,10 +294,12 @@
 
 @media all and (min-width: 660px) and (max-width: 799px) { /*para tablets pqnos*/ 
 
+    .main-content{
+        padding: 0%;
+    }
     .main-content section{
         flex-direction: column-reverse;
         text-align: center;
-        margin: auto;
     }
     .main-content .title{ /*titulo com o meu nome*/
         font-size: 2.1em;
@@ -318,7 +320,7 @@
         width: 15px; 
     }
     .down p{
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
     #minhafoto{ /*minha imagem*/
         margin-left: 0%; margin: 0%;
@@ -393,6 +395,120 @@
 
 @media all and (min-width: 530px ) and (max-width: 659px){ /*tive que fazer outro menor*/
 
+    .main-content{
+        padding: 0%;
+    }
+    .main-content section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .main-content .title{ /*titulo com o meu nome*/
+        font-size: 2.1em;
+        line-height: 1.2;
+        margin-top: 2%;
+        text-align: center;
+    }
+    .title span{ /*subtitulo*/
+        font-size: 0.8em;
+    }
+
+    .down{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .down a img{
+        width: 15px; 
+    }
+    .down p{
+        font-size: 1.1em;
+    }
+    #minhafoto{ /*minha imagem*/
+        margin-left: 0%; margin: 0%;
+    }
+    figure #img{
+        width: 320px;
+        margin: 10px;
+    }
+    figcaption{
+        top: 92%; /*alinhar em baixo da imagem*/
+        left: 20%; /*alinhar no meio da imagem*/
+    
+        min-width: max-content;
+        color: rgb(160, 159, 159);
+    }
+    @keyframes flutuar{
+        0% {
+            transform: translateY(1rem); /* Move para baixo */
+        }
+        50% {
+            transform: translateY(1rem); /* Move para cima */
+        }
+        100% {
+            transform: translateY(1rem); /* Move para baixo */
+        }
+    }
+
+    /*Os botoes de cima*/
+    .tab-btn-item .tab-btn{ /*cada botao*/
+        font-size: 1.4em;
+        padding: 10px 20px;
+    }
+
+    /*tabelas de dentro*/
+    .tab-content {               
+        padding: 20px;
+    }
+
+    #tabela1, #tabela2, #tabela3{
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+
+    /*tabela 1 e 2*/
+    .img-holder img{
+        width: 400px;
+        margin: auto;
+    }
+
+    /*tabela 1*/
+    .tabelas {    
+        display: block;
+        text-align: center;
+        margin: 0px 35px;
+    }
+    .tab-content .primeiro-title{      /*primeiro titulo*/
+        margin-bottom: 1%; margin-top: 2%;
+    }
+    
+    /*tabela 2*/
+    .habilidades{                 /*texto 2 sobre aprendizado*/
+        display: block;
+        text-align: center;
+        margin: 0px 35px;
+    }
+    .habilid-text{                  /*texto 1 sobre mim*/
+        font-size: 1.1em; /*capaz de n precisar*/
+        text-align: left;
+        margin: 0px;
+    }
+    .skill-list{
+        margin: 20px 0px 30px;
+    }
+
+    /*tabela 3*/
+    .card img{
+        width: 4rem;
+    }
+    .card h3{
+        font-size: 1.4em; /*capaz de n precisar*/
+    }
+    .card p{
+        font-size: 1.1em; /*capaz de n precisar*/
+    }
+    .exposição .btn{ /*ver mais*/
+        margin-top: 20px; margin-bottom: 20px;
+    }
 }
 
 @media all and (min-width: 450px ) and (max-width: 529px) { /*para celular*/ 
