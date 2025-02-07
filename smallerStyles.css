@@ -784,10 +784,10 @@
     .tabelas {    
         display: block;
         text-align: center;
-        margin: 0px 25px;
+        margin: 0px 20px;
     }
     .tab-content .primeiro-title{      /*primeiro titulo*/
-        margin-bottom: 1%; margin-top: 2%;
+        margin-bottom: 1%; margin-top: 4%;
         font-size: 1.8em;
     }
     .about-list {                /*a ul*/
@@ -807,7 +807,7 @@
     .habilidades{                 /*texto 2 sobre aprendizado*/
         display: block;
         text-align: center;
-        margin: 0px 25px;
+        margin: 0px;
     }
     .habilid-title{                  /*primeiro titulo*/
         font-size: 1.8em;
