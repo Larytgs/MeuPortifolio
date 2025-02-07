@@ -212,6 +212,17 @@ figcaption{
 }
 
 
+/*tabelas do github*/
+#tabGithub{
+    text-align: center;
+    margin: 0%;
+    margin: 6% 0% 3% 0%;
+}
+#tabGithub img{
+    margin: 2px;
+}
+
+
 /*botoes soltos*/
 .service {
     border-block: 1px solid var(--border-eerie-black);
@@ -267,14 +278,6 @@ figcaption{
 }
 .service-card:is(:hover, :focus-visible) .card-icon { 
     opacity: 0; /*para sumir a imagem, enquanto mostra o texto*/
-}
-
-
-/*tabelas do github*/
-#tabGithub{
-    text-align: center;
-    margin: 0%;
-    margin: 3% 0%;
 }
 
 
