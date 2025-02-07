@@ -197,7 +197,7 @@ figcaption{
     left: 25%; /*alinhar no meio da imagem*/
 
     min-width: max-content;
-    color: rgb(160, 159, 159);
+    color: rgb(184, 183, 183);
 }
 @keyframes flutuar{
     0% {

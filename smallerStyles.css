@@ -712,7 +712,7 @@
     }
     figcaption{
         top: 92%; /*alinhar em baixo da imagem*/
-        left: 10%; /*alinhar no meio da imagem*/
+        left: 8%; /*alinhar no meio da imagem*/
         font-size: 0.95em;
     
         min-width: max-content;
