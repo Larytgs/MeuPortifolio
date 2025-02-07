@@ -784,7 +784,7 @@
     .tabelas {    
         display: block;
         text-align: center;
-        margin: 0px 20px;
+        margin: 0px 5px;
     }
     .tab-content .primeiro-title{      /*primeiro titulo*/
         margin-bottom: 1%; margin-top: 4%;
@@ -807,7 +807,7 @@
     .habilidades{                 /*texto 2 sobre aprendizado*/
         display: block;
         text-align: center;
-        margin: 0px;
+        margin: 0px 5px;
     }
     .habilid-title{                  /*primeiro titulo*/
         font-size: 1.8em;
