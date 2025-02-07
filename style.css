@@ -87,8 +87,8 @@ header{
     display: flex; /*coloquei na lateral os icones*/
     align-items: center; /*centralizar os icones*/
     justify-content: space-between; /*espaçamento igual*/
+    cursor: initial;
 }
-
 header h1 a{
     text-decoration: none;
     color: var(--corturquesa);
@@ -96,6 +96,7 @@ header h1 a{
 }
 header h1 a:hover{
     color: white;
+    cursor: grab;
 }
 header nav{
     box-sizing: border-box;
@@ -109,6 +110,7 @@ header nav img{
 }
 header nav img:hover{
     box-shadow: 1px 3px 5px var(--corturquesa);
+    cursor: grab;
 }
 
 
@@ -195,7 +197,7 @@ figcaption{
     left: 25%; /*alinhar no meio da imagem*/
 
     min-width: max-content;
-    color: rgba(255, 255, 255, 0.432);
+    color: rgb(160, 159, 159);
 }
 @keyframes flutuar{
     0% {
