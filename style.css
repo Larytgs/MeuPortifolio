@@ -328,9 +328,6 @@ figcaption{
 .img-holder img{
     width: 450px;
 }
-.img-holder:hover{
-    box-shadow: 0px 0px 8px var(--corturquesa);
-}
 .about-content{                      /*texto 1 sobre mim*/
     margin: auto;
     text-align: center;
@@ -412,9 +409,6 @@ figcaption{
 
 .img-holder img{
     width: 450px;
-}
-.img-holder:hover{
-    box-shadow: 0px 0px 8px var(--corturquesa);
 }
 
 
