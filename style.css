@@ -59,6 +59,22 @@ html, body{
     width: 100vw; /* 100% da largura da viewport */
 }
 
+/* Remove o cursor padrão */
+body {
+    cursor: none;
+}
+/* Estilizando o cursor personalizado */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 255, 255, 0.5); /* Cor turquesa com transparência */
+    position: absolute;
+    pointer-events: none; /* Evita interferência com cliques */
+    transform: translate(-50%, -50%);
+    transition: transform 1s linear;
+}
+
 header{
     text-align: center;
     background-color: var(--headerFotter);
@@ -80,7 +96,6 @@ header h1 a{
 }
 header h1 a:hover{
     color: white;
-    cursor: pointer;
 }
 header nav{
     box-sizing: border-box;
@@ -145,9 +160,9 @@ main{
     color: white; background-color: #0f0f0f;
     padding: 15px; margin: 20px;
     border-radius: 20%;
+    cursor: none;
 }
 .down a:hover{
-    cursor: pointer;
     background-color: var(--fundoDestaque2); 
     transition-duration: 0.5s;
 }
@@ -173,7 +188,6 @@ figure #img{
 }
 figure #img:hover{
     box-shadow: 0px 0px 8px var(--corturquesa);
-    cursor: pointer;
 }
 figcaption{
     position: absolute; /*para o figcaption fique em cima da imagem*/
@@ -242,6 +256,7 @@ figcaption{
 }
 .service-card .card-title a{
     color: var(--corturquesa);
+    cursor: none;
 }
 
 .service-card:is(:hover, :focus-visible) .card-title {
@@ -257,7 +272,7 @@ figcaption{
 #tabGithub{
     text-align: center;
     margin: 0%;
-    margin: 5% 0%;
+    margin: 3% 0%;
 }
 
 
@@ -280,8 +295,8 @@ figcaption{
 .tab-btn-item .tab-btn{ /*cada botao*/
     font-size: 2em;
     padding: 10px 130px;
-    cursor: pointer;
     transition-duration: 0.5s;
+    cursor: none;
 }
 .tab-btn:is(:hover, :focus-visible) { 
     background: var(--fundoDestaque2); 
@@ -311,7 +326,6 @@ figcaption{
 }
 .img-holder:hover{
     box-shadow: 0px 0px 8px var(--corturquesa);
-    cursor: pointer;
 }
 .about-content{                      /*texto 1 sobre mim*/
     margin: auto;
@@ -424,7 +438,6 @@ figcaption{
     box-shadow: rgba(0, 0, 0, 0.267) -1rem 1rem 1rem;
     background: #0d0d0d;
     border-radius: 20px;
-    cursor: pointer;
 }
 .card:hover {
     background: var(--fundoDestaque2);
@@ -451,7 +464,7 @@ figcaption{
 }
 .exposição .btn span{
     color: white;
-    cursor: pointer;
+    cursor: none;
 }
 .exposição .btn span:hover{
     text-decoration: underline;
@@ -465,7 +478,7 @@ footer .scroll-top {
     right: 30px;
 }
 #botao-top {
-    cursor: pointer;
+    color: var(--corturquesa);
 }
 
 
