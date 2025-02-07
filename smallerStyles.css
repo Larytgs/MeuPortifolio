@@ -719,6 +719,16 @@
         }
     }
 
+    /*tabelas do github*/
+#tabGithub{
+    text-align: center;
+    margin: 0%;
+}
+#tabGithub img{
+    margin: -10px;
+    width: 310px;
+}
+
     /*botoes soltos*/
     .service-card .card-title {
         font-size: 1.1em;
