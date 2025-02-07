@@ -686,10 +686,10 @@
         margin: auto;
     }
     .down a{ 
-        background-color: rgba(0, 255, 255, 0.363);
+        background-color: rgba(0, 255, 255, 0.219);
     }
     .down a:hover{
-        background-color: rgba(0, 255, 255, 0.363);
+        background-color: rgba(0, 255, 255, 0.219);
     }
     .down a img{
         width: 15px; 
