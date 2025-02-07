@@ -72,7 +72,7 @@ body {
     position: absolute;
     pointer-events: none; /* Evita interferência com cliques */
     transform: translate(-50%, -50%);
-    transition: transform 1s linear;
+    transition: transform 0.5s linear;
 }
 
 header{
@@ -248,7 +248,7 @@ figcaption{
     left: 50%; /*alinhar no meio da imagem*/
     transform: translate(-50%, -100%);
     color: var(--text-white);
-    font-size: var(--fontSize-5);
+    font-size: 1.8em;
     font-weight: var(--weight-regular);
     line-height: 1.3;
     opacity: 0; /*deixar o texto em baixo da imagem*/
@@ -318,7 +318,7 @@ figcaption{
 .tabelas {    
     display: flex;
     gap: 30px;
-    flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+    /*flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
 }
 .img-holder img{
     width: 450px;
@@ -364,7 +364,7 @@ figcaption{
 .habilidades{                 /*texto 2 sobre aprendizado*/
     display: flex;
     gap: 30px;
-    flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+    /*flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
 }
 .habilidades .textHabilidade{
     margin: auto;
@@ -461,6 +461,7 @@ figcaption{
     text-align: center;
     display: block;
     margin-top: 40px;
+    font-size: 1.2em;
 }
 .exposição .btn span{
     color: white;
