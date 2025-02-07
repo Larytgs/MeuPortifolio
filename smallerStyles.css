@@ -713,6 +713,7 @@
     figcaption{
         top: 92%; /*alinhar em baixo da imagem*/
         left: 15%; /*alinhar no meio da imagem*/
+        font-size: 0.95em;
     
         min-width: max-content;
         color: rgb(160, 159, 159);
