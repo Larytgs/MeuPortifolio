@@ -506,6 +506,15 @@
     .exposição .btn{ /*ver mais*/
         margin-top: 20px; margin-bottom: 20px;
     }
+
+    
+    footer .scroll-top {
+        bottom: 40px;
+        right: 20px;
+    }
+    footer .scroll-top img{
+        width: 30px;
+    }
 }
 
 @media all and (min-width: 450px ) and (max-width: 529px) { /*para celular*/ 
@@ -642,6 +651,15 @@
     }
     .exposição .btn{ /*ver mais*/
         margin-top: 20px; margin-bottom: 20px;
+    }
+
+
+    footer .scroll-top {
+        bottom: 40px;
+        right: 20px;
+    }
+    footer .scroll-top img{
+        width: 30px;
     }
 }
 
@@ -820,5 +838,13 @@
     }
     .exposição .btn{ /*ver mais*/
         margin-top: 20px; margin-bottom: 20px;
+    }
+
+    footer .scroll-top {
+        bottom: 40px;
+        right: 20px;
+    }
+    footer .scroll-top img{
+        width: 30px;
     }
 }

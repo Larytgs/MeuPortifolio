@@ -21,7 +21,7 @@
 }
 
 :root{
-    --corturquesa: rgb(106, 208, 255);
+    --corturquesa: #6ad0ff;
     --fundoBlack: #000000;
     --headerFotter: #181717;
     --fundoDestaque: #797676;
