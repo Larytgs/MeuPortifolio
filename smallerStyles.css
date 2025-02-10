@@ -687,7 +687,7 @@
         text-align: center;
     }
     .title span{ /*subtitulo*/
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .down{
@@ -792,13 +792,16 @@
         margin-bottom: 1%; margin-top: 4%;
         font-size: 1.7em;
     }
+    .tab-content .section-text{
+        line-height: 1.3em;
+    }
     .about-list {                /*a ul*/
         display: block;
     }
     .about-list li{
         text-align: left;
     }
-    .about-list .nome, .email{ /*capaz de n precisar*/
+    .about-list .nome, .email{ 
         font-size: 1.6em;
     }
     .about-list p{
@@ -815,9 +818,10 @@
         font-size: 1.7em;
     }
     .habilid-text{                  /*texto 1 sobre mim*/
-        font-size: 1.1em; /*capaz de n precisar*/
+        font-size: 1.1em; 
         text-align: left;
         margin: 0px;
+        line-height: 1.3em;
     }
     .skill-list{
         margin: 20px 0px 30px;
@@ -831,10 +835,11 @@
         width: 4rem;
     }
     .card h3{
-        font-size: 1.4em; /*capaz de n precisar*/
+        font-size: 1.4em; 
     }
     .card p{
-        font-size: 1.1em; /*capaz de n precisar*/
+        font-size: 1.1em; 
+        line-height: 1.2em;
     }
     .exposição .btn{ /*ver mais*/
         margin-top: 20px; margin-bottom: 20px;
