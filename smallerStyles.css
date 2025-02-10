@@ -536,7 +536,7 @@
         bottom: 40px;
         right: 20px;
     }
-    footer .scroll-top img{
+    footer #botao-top img{
         width: 30px;
     }
 }
@@ -686,7 +686,7 @@
         bottom: 40px;
         right: 20px;
     }
-    footer .scroll-top img{
+    footer #botao-top img{
         width: 30px;
     }
 }
@@ -881,7 +881,7 @@
         bottom: 40px;
         right: 20px;
     }
-    footer .scroll-top img{
+    footer #botao-top img{
         width: 30px;
     }
 }

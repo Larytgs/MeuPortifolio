@@ -39,9 +39,13 @@ document.addEventListener("mousemove", (e) => {
 
 
 //Parte da seta subindo
-const scrollToTop = () => {
-    window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-    })
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const botaoTop = document.getElementById("botao-top");
+
+    botaoTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
