@@ -878,10 +878,13 @@
     }
 
     footer .scroll-top {
+        display: none;
+    }
+    /*footer .scroll-top {
         bottom: 40px;
         right: 20px;
     }
     footer #botao-top img{
         width: 30px;
-    }
+    }*/
 }
