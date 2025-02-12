@@ -472,6 +472,52 @@ figcaption{
 }
 
 
+
+/*tabela 4*/
+#tabela4{
+    margin-inline: auto;
+}
+.projetos h2{      /*primeiro titulo*/
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--corturquesa);
+}
+.exposição{
+    text-align: center;
+}
+.exposição .cardsProjetos{  
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha caso necessário */
+}
+.cardsProjetos .proj{
+    width: 500px;
+    padding: 30px; margin: 10px;
+    flex-grow: 1;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.267) -1rem 1rem 1rem;
+    background: #0d0d0d;
+    border-radius: 20px;
+}
+.proj:hover {
+    background: var(--fundoDestaque2);
+}
+.proj img{
+    width: 5rem;
+}
+.proj h3{
+    margin: 10px 0px;
+    font-size: 1.5em;
+}
+.proj p{
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 130%;
+    color: var(--paragraph);
+}
+
+
+
 footer .scroll-top {
     position: fixed;
     bottom: 40px;
