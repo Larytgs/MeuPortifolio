@@ -509,11 +509,11 @@
     .proj img{
         width: 600px;
     }
-    .service-card:active .card-title {
+    .service-proj:active .card-title {
         opacity: 1; /*mover aparecer em cima da imagem*/
         transform: translate(-50%, -50%);
     }
-    .service-card:active .card-icon { 
+    .service-proj:active .card-proj { 
         opacity: 0.1; /*para sumir a imagem, enquanto mostra o texto*/
     }
 }
@@ -661,12 +661,15 @@
     .proj img{
         width: 450px;
     }
-    .service-card:active .card-title {
+    .service-proj:active .card-title {
         opacity: 1; /*mover aparecer em cima da imagem*/
         transform: translate(-50%, -50%);
     }
-    .service-card:active .card-icon { 
+    .service-proj:active .card-proj { 
         opacity: 0.1; /*para sumir a imagem, enquanto mostra o texto*/
+    }
+    .service-proj .card-title {
+        font-size: 1.4em;
     }
 
     
@@ -839,12 +842,16 @@
     .proj img{
         width: 400px;
     }
-    .service-card:active .card-title {
+    .service-proj:active .card-title {
         opacity: 1; /*mover aparecer em cima da imagem*/
         transform: translate(-50%, -50%);
     }
-    .service-card:active .card-icon { 
+    .service-proj:active .card-proj { 
         opacity: 0.1; /*para sumir a imagem, enquanto mostra o texto*/
+    }
+    .service-proj .card-title {
+        font-size: 1.4em;
+        line-height: 1;
     }
 
 
@@ -1052,22 +1059,26 @@
     }
 
 
-     /*tabela 4*/
-     .proj .service-proj{
+    /*tabela 4*/
+    .proj .service-proj{
         margin: 0px;
     }
-    .service-proj .card-proj {
+    .service-proj .proj-proj {
        padding: 5px 0px; 
     }
     .proj img{
         width: 330px;
     }
-    .service-card:active .card-title {
+    .service-proj:active .card-title {
         opacity: 1; /*mover aparecer em cima da imagem*/
         transform: translate(-50%, -50%);
     }
-    .service-card:active .card-icon { 
+    .service-proj:active .proj-proj { 
         opacity: 0.1; /*para sumir a imagem, enquanto mostra o texto*/
+    }
+    .service-proj .card-title {
+        font-size: 1.4em;
+        line-height: 1;
     }
 
 
