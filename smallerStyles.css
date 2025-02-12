@@ -94,9 +94,19 @@
     }
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: flex; 
+        justify-content: center; /* Centraliza os botões */
+        gap: 3px;
+    }
+    .tab-btn-item {
+        flex: 1; /* Faz com que todos os botões tenham o mesmo tamanho */
+        display: flex; /* Garante que o botão ocupe todo o espaço */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
-        padding: 10px 40px;
+        padding: 10px 25px;
+        width: 100%;
     }
 }
 
@@ -140,9 +150,19 @@
     }
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: flex; 
+        justify-content: center; /* Centraliza os botões */
+        gap: 3px;
+    }
+    .tab-btn-item {
+        flex: 1; /* Faz com que todos os botões tenham o mesmo tamanho */
+        display: flex; /* Garante que o botão ocupe todo o espaço */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
-        padding: 10px 35px;
+        padding: 10px 25px;
+        width: 100%;
     }
 }
 
@@ -197,9 +217,19 @@
     }
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: flex; 
+        justify-content: center; /* Centraliza os botões */
+        gap: 3px;
+    }
+    .tab-btn-item {
+        flex: 1; /* Faz com que todos os botões tenham o mesmo tamanho */
+        display: flex; /* Garante que o botão ocupe todo o espaço */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
         padding: 10px 25px;
+        width: 100%;
     }
 
     /*tabela 1 e 2*/
@@ -269,9 +299,19 @@
     }
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: flex; 
+        justify-content: center; /* Centraliza os botões */
+        gap: 3px;
+    }
+    .tab-btn-item {
+        flex: 1; /* Faz com que todos os botões tenham o mesmo tamanho */
+        display: flex; /* Garante que o botão ocupe todo o espaço */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
         padding: 10px 15px;
+        width: 100%; /* Garante que o botão ocupe todo o espaço disponível */
     }
 
     /*tabelas de dentro*/
@@ -365,9 +405,19 @@
     }
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: flex; 
+        justify-content: center; /* Centraliza os botões */
+        gap: 3px;
+    }
+    .tab-btn-item {
+        flex: 1; /* Faz com que todos os botões tenham o mesmo tamanho */
+        display: flex; /* Garante que o botão ocupe todo o espaço */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 1.6em;
         padding: 10px 15px;
+        width: 100%; /* Garante que o botão ocupe todo o espaço disponível */
     }
 
     /*tabelas de dentro*/
@@ -471,9 +521,19 @@
     }
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: flex; 
+        justify-content: center; /* Centraliza os botões */
+        gap: 3px;
+    }
+    .tab-btn-item {
+        flex: 1; /* Faz com que todos os botões tenham o mesmo tamanho */
+        display: flex; /* Garante que o botão ocupe todo o espaço */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
-        font-size: 1.3em;
+        font-size: 1.4em;
         padding: 10px 10px;
+        width: 100%; /* Garante que o botão ocupe todo o espaço disponível */
     }
 
     /*tabelas de dentro*/
