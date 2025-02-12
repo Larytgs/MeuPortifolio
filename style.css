@@ -293,14 +293,13 @@ figcaption{
 }
 .tab-container .tab-btn-item{ /*os botoes de cima*/
     display: inline-block;
-    margin: 2% 0%;
     list-style: none; /*tirar o icone do type da lista*/
     border-radius: 10px;
     transition: var(--transition-1);
 }
 .tab-btn-item .tab-btn{ /*cada botao*/
     font-size: 2em;
-    padding: 10px 130px;
+    padding: 10px 80px;
     transition-duration: 0.5s;
     cursor: none;
 }

@@ -96,7 +96,7 @@
     /*Os botoes de cima*/
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
-        padding: 10px 70px;
+        padding: 10px 40px;
     }
 }
 
@@ -142,7 +142,7 @@
     /*Os botoes de cima*/
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
-        padding: 10px 50px;
+        padding: 10px 35px;
     }
 }
 
@@ -199,7 +199,7 @@
     /*Os botoes de cima*/
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
-        padding: 10px 50px;
+        padding: 10px 25px;
     }
 
     /*tabela 1 e 2*/
@@ -271,7 +271,7 @@
     /*Os botoes de cima*/
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 2em;
-        padding: 10px 35px;
+        padding: 10px 15px;
     }
 
     /*tabelas de dentro*/
@@ -366,8 +366,8 @@
 
     /*Os botoes de cima*/
     .tab-btn-item .tab-btn{ /*cada botao*/
-        font-size: 1.7em;
-        padding: 10px 25px;
+        font-size: 1.6em;
+        padding: 10px 15px;
     }
 
     /*tabelas de dentro*/
@@ -472,8 +472,8 @@
 
     /*Os botoes de cima*/
     .tab-btn-item .tab-btn{ /*cada botao*/
-        font-size: 1.4em;
-        padding: 10px 20px;
+        font-size: 1.3em;
+        padding: 10px 10px;
     }
 
     /*tabelas de dentro*/
@@ -609,9 +609,18 @@
     }
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        justify-content: center; /* Centraliza os botões */
+        gap: 5px; /* Espaço entre os botões */
+        padding: 0;
+        max-width: 550px; /* Ajuste a largura conforme necessário */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
-        font-size: 1.2em;
-        padding: 10px 15px;
+        font-size: 1.4em;
+        padding: 10px 30px;
+        width: 100%; /* Garante que o botão ocupe todo o espaço disponível */
     }
 
     /*tabelas de dentro*/
@@ -791,10 +800,18 @@
 
 
     /*Os botoes de cima*/
+    .tab-container ul {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        justify-content: center; /* Centraliza os botões */
+        gap: 5px; /* Espaço entre os botões */
+        padding: 0;
+        max-width: 550px; /* Ajuste a largura conforme necessário */
+    }
     .tab-btn-item .tab-btn{ /*cada botao*/
-        font-size: 1.2em;
-        padding: 10px 20px;
-        margin-bottom: 0%;
+        font-size: 1.4em;
+        padding: 10px 30px;
+        width: 100%; /* Garante que o botão ocupe todo o espaço disponível */
     }
 
 
