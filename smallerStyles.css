@@ -94,7 +94,7 @@
     }
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul {
         display: flex; 
         justify-content: center; /* Centraliza os botões */
         gap: 3px;
@@ -150,7 +150,7 @@
     }
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul{
         display: flex; 
         justify-content: center; /* Centraliza os botões */
         gap: 3px;
@@ -217,7 +217,7 @@
     }
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul{
         display: flex; 
         justify-content: center; /* Centraliza os botões */
         gap: 3px;
@@ -299,7 +299,7 @@
     }
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul{
         display: flex; 
         justify-content: center; /* Centraliza os botões */
         gap: 3px;
@@ -405,7 +405,7 @@
     }
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul{
         display: flex; 
         justify-content: center; /* Centraliza os botões */
         gap: 3px;
@@ -521,7 +521,7 @@
     }
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul{
         display: flex; 
         justify-content: center; /* Centraliza os botões */
         gap: 3px;
@@ -669,7 +669,7 @@
     }
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul {
         display: grid; 
         grid-template-columns: repeat(2, 1fr); /* 2 colunas */
         justify-content: center; /* Centraliza os botões */
@@ -860,7 +860,7 @@
 
 
     /*Os botoes de cima*/
-    .tab-container ul {
+    .tab-container #tab-ul {
         display: grid; 
         grid-template-columns: repeat(2, 1fr); /* 2 colunas */
         justify-content: center; /* Centraliza os botões */
