@@ -307,7 +307,19 @@ figcaption{
     background: var(--fundoDestaque2); 
 }
 
-#tabela1, #tabela2, #tabela3{
+#tabela1{
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+ #tabela2{
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+#tabela3{
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+#tabela4{
     margin-top: 1%;
     margin-bottom: 4%;
 }
@@ -414,9 +426,6 @@ figcaption{
 
 
 /*tabela 3*/
-#tabela3{
-    margin-inline: auto;
-}
 .exposição h2{      /*primeiro titulo*/
     text-align: center;
     font-size: 2em;
@@ -474,9 +483,6 @@ figcaption{
 
 
 /*tabela 4*/
-#tabela4{
-    margin: auto;
-}
 .projetos h2{      /*primeiro titulo*/
     text-align: center;
     font-size: 2em;
