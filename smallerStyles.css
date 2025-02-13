@@ -1064,8 +1064,12 @@
 
 
     /*tabela 4*/
+    .projetos .cardsProjetos{  /*tds os projetos*/
+        margin: auto;
+        text-align: center;
+    }
     .proj .service-proj{
-        margin: 0px;
+        margin: -10px; margin-bottom: 4px;
     }
     .service-proj .card-proj {
        padding: 10px 0px; 

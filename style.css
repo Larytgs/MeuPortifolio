@@ -475,7 +475,7 @@ figcaption{
 
 /*tabela 4*/
 #tabela4{
-    margin-inline: auto;
+    margin: auto;
 }
 .projetos h2{      /*primeiro titulo*/
     text-align: center;
@@ -489,7 +489,7 @@ figcaption{
 .projetos .cardsProjetos{  /*tds os projetos*/
     display: flex;
     flex-wrap: wrap; /* Permite que os elementos quebrem linha caso necessário */
-    margin-bottom: 5%;
+    margin-bottom: 5%; margin: 0%;
 }
 .cardsProjetos .proj{ /*cada projeto*/
     flex-grow: 1;
