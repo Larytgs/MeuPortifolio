@@ -10,6 +10,9 @@ document.addEventListener("mousemove", (e) => {
 });
 
 
+//Carrossel
+
+
 //Parte da seta subindo
 document.addEventListener("DOMContentLoaded", () => {
     const botaoTop = document.getElementById("botao-top");
