@@ -624,6 +624,9 @@
     }
 
     /*tabela 3*/
+    .card{
+        border-radius: 0px;
+    }
     .card img{
         width: 4rem;
     }
@@ -631,7 +634,8 @@
         font-size: 1.4em; /*capaz de n precisar*/
     }
     .card p{
-        font-size: 1.1em; /*capaz de n precisar*/
+        font-size: 1.2em; /*capaz de n precisar*/
+        width: 400px;
     }
     .exposição .btnGithub{ /*ver mais*/
         margin-top: 20px; margin-bottom: 20px;
@@ -800,6 +804,9 @@
     }
 
     /*tabela 3*/
+    .card{
+        border-radius: 0px;
+    }
     .card img{
         width: 4rem;
     }
@@ -807,7 +814,8 @@
         font-size: 1.4em; /*capaz de n precisar*/
     }
     .card p{
-        font-size: 1.1em; /*capaz de n precisar*/
+        font-size: 1.2em; /*capaz de n precisar*/
+        width: 300px;
     }
     .exposição .btnGithub{ /*ver mais*/
         margin-top: 10px; margin-bottom: 20px;
@@ -1022,6 +1030,10 @@
     .exposição h2{      /*primeiro titulo*/
         font-size: 1.7em;
     }
+    .card{
+        border-radius: 0px;
+        scroll-snap-type: x mandatory;
+    }
     .card img{
         width: 4rem;
     }
@@ -1030,9 +1042,8 @@
     }
     .card p{
         font-size: 1.1em; 
-        line-height: 1.2em;
-        width: 220px;
-        margin: 5px;
+        line-height: 1.2em;width: 220px;
+        width: 240px;
     }
 
     /*ver mais*/
