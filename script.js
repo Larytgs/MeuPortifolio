@@ -11,61 +11,65 @@ document.addEventListener("mousemove", (e) => {
 
 
 //Carrossel
-/*const container = document.querySelector('.cardsCarrossel');
+const container = document.querySelector('.cardsCarrossel');
 let cards = document.querySelectorAll('.card');
 const cardWidth = cards[0].offsetWidth + 10; // Largura do card + gap
-const visibleCards = 3; // Define quantos cards aparecem por vez
-let index = visibleCards; // Começa no primeiro grupo de cards
+const visibleCards = 1; // Define quantos cards aparecem por vez
+let index = 1; // Começa no primeiro card real
+
+// Ajustar a largura do contêiner para caber os cards visíveis corretamente
+container.style.width = `${visibleCards * cardWidth}px`;
+
 
 // Clonar os primeiros e últimos 3 cards para efeito infinito
 function clonarCards() {
-    for (let i = 0; i < visibleCards; i++) {
-        let cloneStart = cards[i].cloneNode(true);
-        let cloneEnd = cards[cards.length - 1 - i].cloneNode(true);
-        container.appendChild(cloneStart); // Clones no final
-        container.insertBefore(cloneEnd, container.firstChild); // Clones no início
-    }
-    cards = document.querySelectorAll('.card'); // Atualizar lista após adicionar clones
-    container.style.transform = `translateX(${-index * cardWidth}px)`; // Ajustar posição inicial
+  const totalCards = cards.length;
+
+  // Clonar os primeiros e últimos `visibleCards` cards
+  for (let i = 0; i < visibleCards; i++) {
+      let cloneStart = cards[i].cloneNode(true); // Clona os primeiros
+      let cloneEnd = cards[totalCards - 1 - i].cloneNode(true); // Clona os últimos
+
+      container.appendChild(cloneStart); // Adiciona no final
+      container.insertBefore(cloneEnd, container.firstChild); // Adiciona no início
+  }
+
+  // Atualiza a lista de cards incluindo os clones
+  cards = document.querySelectorAll('.card');
+
+  // ⚠️ Move a posição inicial do carrossel para o primeiro card real (evitando clones visíveis
+  container.style.transform = `translateX(${-index * cardWidth}px)`;
 }
 
 clonarCards();
 
-function moverCarrossel(direcao) {
-  container.style.transition = "transform 0.5s ease-in-out";
-  index += direcao * visibleCards; // Avança ou retrocede 3 cards
+  // Função para mover o carrossel
+  //A função recebe um parâmetro direcao, que indica se o carrossel deve se mover para frente (1) ou para trás (-1).
+function moverCarrossel(direcao) { 
+  container.style.transition = "transform 0.4s ease-in-out"; //Define uma animação
+
+  index += direcao; // Avança o número correto de cards
+  //Se direcao for 1, o carrossel avança para o próximo item.
+  //Se direcao for -1, o carrossel volta para o item anterior.
 
   container.style.transform = `translateX(${-index * cardWidth}px)`;
+  //Move o carrossel na horizontal multiplicando o índice (index) pela largura do card (cardWidth).
+  //O sinal negativo (-) faz o movimento para a esquerda.
 
   // Ajusta posição para manter o loop infinito
   setTimeout(() => {
-    if (index <= 0) {
-        container.style.transition = "none";
-        index = cards.length - (2 * visibleCards);
-        container.style.transform = `translateX(${-index * cardWidth}px)`;
-    } else if (index >= cards.length - visibleCards) {
-        container.style.transition = "none";
-        index = visibleCards;
-        container.style.transform = `translateX(${-index * cardWidth}px)`;
+    if (index >= cards.length - 1) {
+      // Se estiver no clone do primeiro card, vai para o primeiro real
+      container.style.transition = "none";
+      index = 1;
+      container.style.transform = `translateX(${-index * cardWidth}px)`;
+    } else if (index < 0) {
+      // Se estiver no clone do último card, vai para o último real
+      container.style.transition = "none";
+      index = cards.length - 1;
+      container.style.transform = `translateX(${-index * cardWidth}px)`;
     }
-  }, 500);
-
-
-
-  // Ajuste para responsivo
-  function ajustarVisibleCards() {
-    if (window.innerWidth <= 768) {
-        visibleCards = 1; // No responsivo, apenas 1 card visível
-    } else {
-        visibleCards = 3; // Para telas maiores, 3 cards visíveis
-    }
-  }
-
-  // Atualiza a quantidade de cards visíveis quando a janela é redimensionada
-  window.addEventListener('resize', () => {
-    ajustarVisibleCards();
-    cardWidth = cards[0].offsetWidth + 10; // Atualiza a largura do card
-  });
+  }, 500); //espera 0,5 segundos antes de executar o código dentro dele. Isso dá tempo para a animação terminar antes de fazer ajustes.
 }
 
 

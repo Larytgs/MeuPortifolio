@@ -435,27 +435,24 @@ figcaption{
 .exposição{
     text-align: center;
     box-sizing: content-box;
+    margin: auto;
 }
-.carrossel-container { /*toda a tabela junto c os botoes*/
-    position: relative;
-    width: 100%;
+.carrossel-container { /*toda a tabela, junto c os botoes*/
+    position: relative; /*para os botoes*/
     overflow: hidden;
 }
 .cardsCarrossel{  /*todos os conhecimentos*/
     display: flex;
+    flex-flow: row nowrap;
     box-sizing: content-box;
-    margin: auto; 
-    gap: 10px;
-    transition: transform 0.5s ease-in-out;
-
-    flex-wrap: wrap; /* Permite que os elementos quebrem linha caso necessário */
+    margin: auto;
+    gap: 15px;
 }
 .card{ /*cada conhecimento*/
     width: 500px;
-    padding: 30px; margin: 10px;
+    flex-shrink: 0; /* Impede que os cards diminuam */
+    padding: 30px;
     flex-grow: 1;
-    /*flex-shrink: 0; /* Impede que os cards diminuam */
-    /*align-items: center; /* Centraliza os botões verticalmente */
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.267) -1rem 1rem 1rem;
     background: #0d0d0d;
@@ -477,25 +474,22 @@ figcaption{
     line-height: 130%;
     color: var(--paragraph);
 }
-/*botoes para clicar*/
-.btn {
+/*botoes para carrossel*/
+.control {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--headerFotter);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
-    border-radius: 50%;
     z-index: 10; /*para ele ficar visivel sempre*/
 }
-.btn-left {
-    left: 10px;
+.control-left {
+    top: 0; bottom: 0; left: 0; right: auto;
 }
-.btn-right {
-    right: 10px;
+.control-right {
+    top: 0; bottom: 0; left: auto; right: 0;
 }
 
 /*ver mais*/

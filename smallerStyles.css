@@ -633,7 +633,7 @@
     .card p{
         font-size: 1.1em; /*capaz de n precisar*/
     }
-    .exposição .btn{ /*ver mais*/
+    .exposição .btnGithub{ /*ver mais*/
         margin-top: 20px; margin-bottom: 20px;
     }
 
@@ -809,7 +809,7 @@
     .card p{
         font-size: 1.1em; /*capaz de n precisar*/
     }
-    .exposição .btn{ /*ver mais*/
+    .exposição .btnGithub{ /*ver mais*/
         margin-top: 10px; margin-bottom: 20px;
     }
     
@@ -1022,13 +1022,6 @@
     .exposição h2{      /*primeiro titulo*/
         font-size: 1.7em;
     }
-    /*.cardsCarrossel {
-        width: 90%;
-    }
-    .card {
-        margin: auto;
-        width: 250px;
-    }*/
     .card img{
         width: 4rem;
     }
@@ -1038,10 +1031,12 @@
     .card p{
         font-size: 1.1em; 
         line-height: 1.2em;
+        width: 220px;
+        margin: 5px;
     }
 
     /*ver mais*/
-    .exposição .btn{ 
+    .exposição .btnGithub{ 
         margin-top: 20px; margin-bottom: 20px;
     }
     .cardsCarrossel .card{
