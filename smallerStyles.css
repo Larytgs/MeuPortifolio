@@ -1022,6 +1022,13 @@
     .exposição h2{      /*primeiro titulo*/
         font-size: 1.7em;
     }
+    /*.cardsCarrossel {
+        width: 90%;
+    }
+    .card {
+        margin: auto;
+        width: 250px;
+    }*/
     .card img{
         width: 4rem;
     }
@@ -1032,10 +1039,12 @@
         font-size: 1.1em; 
         line-height: 1.2em;
     }
-    .exposição .btn{ /*ver mais*/
+
+    /*ver mais*/
+    .exposição .btn{ 
         margin-top: 20px; margin-bottom: 20px;
     }
-    .cards .card{
+    .cardsCarrossel .card{
         background: #1a1919;
     }
 

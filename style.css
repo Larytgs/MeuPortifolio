@@ -434,15 +434,28 @@ figcaption{
 }
 .exposição{
     text-align: center;
+    box-sizing: content-box;
 }
-.exposição .cards{  
+.carrossel-container { /*toda a tabela junto c os botoes*/
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.cardsCarrossel{  /*todos os conhecimentos*/
     display: flex;
+    box-sizing: content-box;
+    margin: auto; 
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+
     flex-wrap: wrap; /* Permite que os elementos quebrem linha caso necessário */
 }
-.cards .card{
+.card{ /*cada conhecimento*/
     width: 500px;
     padding: 30px; margin: 10px;
     flex-grow: 1;
+    /*flex-shrink: 0; /* Impede que os cards diminuam */
+    /*align-items: center; /* Centraliza os botões verticalmente */
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.267) -1rem 1rem 1rem;
     background: #0d0d0d;
@@ -464,19 +477,40 @@ figcaption{
     line-height: 130%;
     color: var(--paragraph);
 }
+/*botoes para clicar*/
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10; /*para ele ficar visivel sempre*/
+}
+.btn-left {
+    left: 10px;
+}
+.btn-right {
+    right: 10px;
+}
 
-.exposição .btn{ /*ver mais*/
+/*ver mais*/
+.exposição .btnGithub{ 
     text-decoration: none;
     text-align: center;
     display: block;
     margin-top: 40px;
     font-size: 1.2em;
 }
-.exposição .btn span{
+.exposição .btnGithub span{
     color: white;
     cursor: none;
 }
-.exposição .btn span:hover{
+.exposição .btnGithub span:hover{
     text-decoration: underline;
 }
 
