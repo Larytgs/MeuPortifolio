@@ -957,7 +957,7 @@
     }
     .tab-btn-item .tab-btn{ /*cada botao*/
         font-size: 1.4em;
-        padding: 10px 20px;
+        padding: 10px 15px;
         width: 100%; /* Garante que o botão ocupe todo o espaço disponível */
     }
 
