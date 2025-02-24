@@ -447,7 +447,7 @@ figcaption{
     box-sizing: content-box;
     margin: auto;
     gap: 15px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; /* Scroll grudando no eixo X */
 }
 .card{ /*cada conhecimento*/
     width: 500px; height: 250px;
@@ -456,9 +456,9 @@ figcaption{
     padding: 30px; 
     flex-grow: 1;
     text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.267) -1rem 1rem 1rem;
     background: #0d0d0d;
     border-radius: 20px;
+    scroll-snap-align: start; /* O início do item será o ponto de snap */
 }
 .card:hover {
     background: var(--fundoDestaque2);
@@ -523,24 +523,22 @@ figcaption{
     text-align: center;
 }
 .projetos .cardsProjetos{  /*tds os projetos*/
-    display: flex;
+    display: ruby;
     flex-wrap: wrap; /* Permite que os elementos quebrem linha caso necessário */
     margin-bottom: 5%; margin: 0%;
 }
 .cardsProjetos .proj{ /*cada projeto*/
-    flex-grow: 1;
+    flex: auto;
     text-align: center;
-    margin: 0%;
-}
-.proj .service-proj{
     margin: 10px;
 }
 .proj img{
-    width: 600px;
+    width: 500px;
     border-radius: 10px;
 }
 
-.service-proj {
+/*parte de aparecer o titulo em cima da imagem*/
+.service-proj { 
     position: relative; /*centralizar o texto na imagem*/
 }
 .service-proj .card-proj {
