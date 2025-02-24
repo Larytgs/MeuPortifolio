@@ -1046,21 +1046,17 @@
         margin: auto;
         text-align: center;
     }
+    .cardsProjetos .proj{ /*cada projeto*/
+        margin: 0px;
+    }
     .proj .service-proj{
-        margin: -10px; margin-bottom: 4px;
+        margin: -10px; margin-bottom: 20px;
     }
     .service-proj .card-proj {
        padding: 0px; 
     }
     .proj img{
         width: 370px; height: 170px;
-    }
-    .service-proj:active .card-title {
-        opacity: 1; /*mover aparecer em cima da imagem*/
-        transform: translate(-50%, -50%);
-    }
-    .service-proj:active .proj-proj { 
-        opacity: 0.1; /*para sumir a imagem, enquanto mostra o texto*/
     }
     .service-proj .card-title {
         font-size: 1.4em;
