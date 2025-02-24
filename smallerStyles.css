@@ -1047,7 +1047,7 @@
         text-align: center;
     }
     .cardsProjetos .proj{ /*cada projeto*/
-        margin: 0px;
+        margin: -4px;
     }
     .proj .service-proj{
         margin: -10px; margin-bottom: 20px;
