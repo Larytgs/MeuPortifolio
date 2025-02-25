@@ -1022,7 +1022,6 @@
         scroll-snap-type: x mandatory; /*Define o eixo e o comportamento do "encaixe" ao rolar*/
                     /*x → Aplica o efeito no eixo horizontal.
                     mandatory → Obriga a rolagem a parar no próximo ponto de encaixe definido (não pode parar entre os pontos)*/
-        border: 1px solid yellow;
     }
     .card img{
         width: 4rem;
