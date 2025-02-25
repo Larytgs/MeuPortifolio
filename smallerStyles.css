@@ -897,6 +897,7 @@
     figure #img{
         width: 320px;
         margin: 10px;
+        filter: brightness(80%); /*deixar a imagem mais escura*/
     }
     figcaption{
         display: none;
