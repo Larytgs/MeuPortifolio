@@ -458,7 +458,6 @@ figcaption{
     flex-grow: 1;
     text-align: left;
     border-radius: 20px;
-    scroll-snap-align: start; /* O início do item será o ponto de snap */
 }
 .card:hover {
     background: var(--fundoDestaque2);
