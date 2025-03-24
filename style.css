@@ -1,594 +1,620 @@
 @charset "UTF8";
 
 @font-face {
-    font-family: 'cabeçalho';
-    src: url(estilo/Mogent.otf) format(opentype);
+  font-family: "cabeçalho";
+  src: url(estilo/Mogent.otf) format(opentype);
 }
 
 @font-face {
-    font-family: 'titulo';
-    src: url(estilo/02_APompadourTextSample.ttf) format(truetype) url(estilo/03_APompadourBoldSample.otf) format(opentype);
+  font-family: "titulo";
+  src: url(estilo/02_APompadourTextSample.ttf) format(truetype)
+    url(estilo/03_APompadourBoldSample.otf) format(opentype);
 }
 
 :target {
-    scroll-margin-top: 5em;  /*para ele rolar no lugar certo qnd clica num botao*/
+  scroll-margin-top: 5em; /*para ele rolar no lugar certo qnd clica num botao*/
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Times New Roman', Times, serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-:root{
-    --corturquesa: #6ad0ff;
-    --fundoBlack: #000000;
-    --headerFotter: #181717;
-    --fundoDestaque: #797676;
-    --fundoDestaque2: #333;
+:root {
+  --corturquesa: #6ad0ff;
+  --fundoBlack: #000000;
+  --headerFotter: #181717;
+  --fundoDestaque: #797676;
+  --fundoDestaque2: #333;
 
-    --bg-eerie-black: hsla(0, 0%, 13%, 1);
+  --bg-eerie-black: hsla(0, 0%, 13%, 1);
 
-    --weight-regular: 400;
-    --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-medium: 500;
 
-    --section-spacing: 70px;
+  --section-spacing: 70px;
 
-    --border-white: hsla(0, 0%, 100%, 1);
-    --border-light-gray: hsla(240, 1%, 83%, 1);
-    --border-gainsboro: hsla(220, 13%, 91%, 1);
-    --border-eerie-black: hsla(0, 0%, 13%, 1);
-    --border-smoky-black: hsla(0, 0%, 6%, 1);
+  --border-white: hsla(0, 0%, 100%, 1);
+  --border-light-gray: hsla(240, 1%, 83%, 1);
+  --border-gainsboro: hsla(220, 13%, 91%, 1);
+  --border-eerie-black: hsla(0, 0%, 13%, 1);
+  --border-smoky-black: hsla(0, 0%, 6%, 1);
 
-    --transition-1: 0.25s ease;
-    --transition-2: 0.5s ease;
-    --transition-3: 1000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --transition-3: 1000ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
 }
 
-
-html, body{
-    overflow-x: hidden; 
-    height: 100vh;
-    background-color: var(--fundoBlack);
-    color: white;
-    scroll-behavior: smooth; /*rolagem suave*/  
-    width: 100vw; /* 100% da largura da viewport */
+html,
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: var(--fundoBlack);
+  color: white;
+  scroll-behavior: smooth; /*rolagem suave*/
+  width: 100vw; /* 100% da largura da viewport */
 }
 
 /* Remove o cursor padrão */
 body {
-    cursor: none;
+  cursor: none;
 }
 /* Estilizando o cursor personalizado */
 .cursor {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(0, 255, 255, 0.5); /* Cor turquesa com transparência */
-    position: absolute;
-    pointer-events: none; /* Evita interferência com cliques */
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s linear;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.5); /* Cor turquesa com transparência */
+  position: absolute;
+  pointer-events: none; /* Evita interferência com cliques */
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s linear;
 }
 
-header{
-    text-align: center;
-    background-color: var(--headerFotter);
-    padding: 12px;
+header {
+  text-align: center;
+  background-color: var(--headerFotter);
+  padding: 12px;
 
-    position: sticky; /*grudavel*/
-    top: -1px;
-    z-index: 1; /*Assim, ele ficará na frente de tds*/
+  position: sticky; /*grudavel*/
+  top: -1px;
+  z-index: 1; /*Assim, ele ficará na frente de tds*/
 
-    display: flex; /*coloquei na lateral os icones*/
-    align-items: center; /*centralizar os icones*/
-    justify-content: space-between; /*espaçamento igual*/
-    cursor: initial;
+  display: flex; /*coloquei na lateral os icones*/
+  align-items: center; /*centralizar os icones*/
+  justify-content: space-between; /*espaçamento igual*/
+  cursor: initial;
 }
-header h1 a{
-    text-decoration: none;
-    color: var(--corturquesa);
-    font-family: 'cabeçalho';
+header h1 a {
+  text-decoration: none;
+  color: var(--corturquesa);
+  font-family: "cabeçalho";
 }
-header h1 a:hover{
-    color: white;
-    cursor: grab;
+header h1 a:hover {
+  color: white;
+  cursor: grab;
 }
-header nav{
-    box-sizing: border-box;
-} 
-header nav a{
-    text-decoration: none;
-    margin-right: 1em;
-    font-size: 1.3em;
+header nav {
+  box-sizing: border-box;
 }
-header nav img{
-    border-radius: 5px;
+header nav a {
+  text-decoration: none;
+  margin-right: 1em;
+  font-size: 1.3em;
 }
-header nav img:hover{
-    box-shadow: 1px 3px 5px var(--corturquesa);
-    cursor: grab;
+header nav img {
+  border-radius: 5px;
 }
-
-
-
-main{
-    box-sizing: content-box;
-    padding-top: 4%;
+header nav img:hover {
+  box-shadow: 1px 3px 5px var(--corturquesa);
+  cursor: grab;
 }
 
-.main-content{
-    margin-bottom: 5%; padding: 20px;
-    text-align: center; /*centralizar os icones na horizontal*/
-}
-.main-content section{
-    display: flex; /*coloquei na lateral os icones*/
-    justify-content: space-between; /*espaçamento igual*/
-    align-items: center; /*centralizar os icones na vertical*/
-    
-    box-sizing: border-box;
+main {
+  box-sizing: content-box;
+  padding-top: 4%;
 }
 
-#first{
-    margin: auto; padding: 20px;
-    text-align: center;
+.main-content {
+  margin-bottom: 5%;
+  padding: 20px;
+  text-align: center; /*centralizar os icones na horizontal*/
 }
-.main-content .title{ /*titulo com o meu nome*/
-    line-height: 0.8;
-    font-size: 3em;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: left;
-}
-.title span{ /*subtitulo*/
-    font-size: 0.6em;
-    color: var(--fundoDestaque);
+.main-content section {
+  display: flex; /*coloquei na lateral os icones*/
+  justify-content: space-between; /*espaçamento igual*/
+  align-items: center; /*centralizar os icones na vertical*/
+
+  box-sizing: border-box;
 }
 
-.down{ /*download da CV*/
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-
-    box-sizing: content-box;
+#first {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
-.down a{
-    box-sizing: border-box;
-    display: inline-flex; margin: auto; align-items: center;
-    
-    text-decoration: none;
-    color: white; background-color: #0f0f0f;
-    padding: 15px; margin: 20px;
-    border-radius: 20%;
-    cursor: none;
-    gap: 10px;
-    max-width: max-content;
+.main-content .title {
+  /*titulo com o meu nome*/
+  line-height: 0.8;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: left;
 }
-.down a:hover{
-    background-color: var(--fundoDestaque2); 
-    transition-duration: 0.5s;
-}
-.down a img{ /*img de download*/
-    width: 20px;
-}
-.down p{
-    display: block;
-    font-size: 1.4em;
-    width: 500px;
+.title span {
+  /*subtitulo*/
+  font-size: 0.6em;
+  color: var(--fundoDestaque);
 }
 
-#minhafoto{ /*minha imagem*/
-    position: relative; /*para o figcaption fique embaixo da imagem*/
-    margin: auto; margin-left: -50px;
-}
-figure #img{
-    width: 350px;
-    border-radius: 20% 10px;
-    border: 1px solid var(--corturquesa);
+.down {
+  /*download da CV*/
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
 
-    filter: brightness(70%); /*deixar a imagem mais escura*/
-    animation: flutuar 2.5s infinite backwards;
+  box-sizing: content-box;
 }
-figure #img:hover{
-    box-shadow: 0px 0px 8px var(--corturquesa);
-}
-figcaption{
-    position: absolute; /*para o figcaption fique em cima da imagem*/
-    top: 89%; /*alinhar em baixo da imagem*/
-    left: 25%; /*alinhar no meio da imagem*/
+.down a {
+  box-sizing: border-box;
+  display: inline-flex;
+  margin: auto;
+  align-items: center;
 
-    min-width: max-content;
-    color: rgb(184, 183, 183);
+  text-decoration: none;
+  color: white;
+  background-color: #0f0f0f;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 20%;
+  cursor: none;
+  gap: 10px;
+  max-width: max-content;
 }
-@keyframes flutuar{
-    0% {
-        transform: translateY(1rem); /* Move para baixo */
-    }
-    50% {
-        transform: translateY(-0.5rem); /* Move para cima */
-    }
-    100% {
-        transform: translateY(1rem); /* Move para baixo */
-    }
+.down a:hover {
+  background-color: var(--fundoDestaque2);
+  transition-duration: 0.5s;
+}
+.down a img {
+  /*img de download*/
+  width: 20px;
+}
+.down p {
+  display: block;
+  font-size: 1.4em;
+  width: 500px;
 }
 
+#minhafoto {
+  /*minha imagem*/
+  position: relative; /*para o figcaption fique embaixo da imagem*/
+  margin: auto;
+  margin-left: -50px;
+}
+figure #img {
+  width: 350px;
+  border-radius: 20% 10px;
+  border: 1px solid var(--corturquesa);
+
+  filter: brightness(70%); /*deixar a imagem mais escura*/
+  animation: flutuar 2.5s infinite backwards;
+}
+figure #img:hover {
+  box-shadow: 0px 0px 8px var(--corturquesa);
+}
+figcaption {
+  position: absolute; /*para o figcaption fique em cima da imagem*/
+  top: 89%; /*alinhar em baixo da imagem*/
+  left: 25%; /*alinhar no meio da imagem*/
+
+  min-width: max-content;
+  color: rgb(184, 183, 183);
+}
+@keyframes flutuar {
+  0% {
+    transform: translateY(1rem); /* Move para baixo */
+  }
+  50% {
+    transform: translateY(-0.5rem); /* Move para cima */
+  }
+  100% {
+    transform: translateY(1rem); /* Move para baixo */
+  }
+}
 
 /*tabelas do github*/
-#tabGithub{
-    text-align: center;
-    margin: 0%;
-    margin: 6% 0% 3% 0%;
+#tabGithub {
+  text-align: center;
+  margin: 0%;
+  margin: 7% 0% 3% 0%;
 }
-#tabGithub img{
-    margin: 2px;
+#tabGithub img {
+  margin: 2px;
 }
-
 
 /*botoes soltos*/
 .service {
-    border-block: 1px solid var(--border-eerie-black);
-    margin-block-start: var(--section-spacing);
+  border-block: 1px solid var(--border-eerie-black);
+  margin-block-start: var(--section-spacing);
 
-    text-align: center;
-    box-sizing: content-box;
+  text-align: center;
+  box-sizing: content-box;
 }
 
-.container-service{
-    flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
-    box-sizing: border-box;
+.container-service {
+  flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+  box-sizing: border-box;
 }
-.container-service ul{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+.container-service ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
-.container-service li{
-    list-style: none; /*tirar o icone do type da lista*/
+.container-service li {
+  list-style: none; /*tirar o icone do type da lista*/
 }
 
 .service-card {
-    position: relative; /*centralizar o texto na imagem*/
-    padding-block: 45px;
+  position: relative; /*centralizar o texto na imagem*/
+  padding-block: 45px;
 }
 .service-card .card-icon {
-    max-width: max-content;
-    margin-inline: auto;
-    transition: var(--transition-1);
+  max-width: max-content;
+  margin-inline: auto;
+  transition: var(--transition-1);
 }
 
 .service-card .card-title {
-    position: absolute;
-    top: 50%; /*alinhar no meio da imagem*/
-    left: 50%; /*alinhar no meio da imagem*/
-    transform: translate(-50%, -100%);
-    color: var(--text-white);
-    font-size: 1.8em;
-    font-weight: var(--weight-regular);
-    line-height: 1.3;
-    opacity: 0; /*deixar o texto em baixo da imagem*/
-    transition: var(--transition-1);
+  position: absolute;
+  top: 50%; /*alinhar no meio da imagem*/
+  left: 50%; /*alinhar no meio da imagem*/
+  transform: translate(-50%, -100%);
+  color: var(--text-white);
+  font-size: 1.8em;
+  font-weight: var(--weight-regular);
+  line-height: 1.3;
+  opacity: 0; /*deixar o texto em baixo da imagem*/
+  transition: var(--transition-1);
 }
-.service-card .card-title a{
-    color: var(--corturquesa);
-    cursor: none;
+.service-card .card-title a {
+  color: var(--corturquesa);
+  cursor: none;
 }
 
 .service-card:is(:hover, :focus-visible) .card-title {
-    opacity: 1; /*mover o texto p cima da imagem*/
-    transform: translate(-50%, -50%);
+  opacity: 1; /*mover o texto p cima da imagem*/
+  transform: translate(-50%, -50%);
 }
-.service-card:is(:hover, :focus-visible) .card-icon { 
-    opacity: 0; /*para sumir a imagem, enquanto mostra o texto*/
+.service-card:is(:hover, :focus-visible) .card-icon {
+  opacity: 0; /*para sumir a imagem, enquanto mostra o texto*/
 }
-
 
 /*Tabela para baixo*/
-.tab-container { /*a tabela inteira*/
-    box-sizing: content-box;
+.tab-container {
+  /*a tabela inteira*/
+  box-sizing: content-box;
 }
 
 /*Os botoes de cima*/
-.tab-container #tab-ul{
-    text-align: center;
+.tab-container #tab-ul {
+  text-align: center;
 }
-.tab-container .tab-btn-item{ /*os botoes de cima*/
-    display: inline-block;
-    list-style: none; /*tirar o icone do type da lista*/
-    border-radius: 10px;
-    transition: var(--transition-1);
+.tab-container .tab-btn-item {
+  /*os botoes de cima*/
+  display: inline-block;
+  list-style: none; /*tirar o icone do type da lista*/
+  border-radius: 10px;
+  transition: var(--transition-1);
 }
-.tab-btn-item .tab-btn{ /*cada botao*/
-    font-size: 2em;
-    padding: 10px 80px;
-    transition-duration: 0.5s;
-    cursor: none;
+.tab-btn-item .tab-btn {
+  /*cada botao*/
+  font-size: 2em;
+  padding: 10px 80px;
+  transition-duration: 0.5s;
+  cursor: none;
 }
-.tab-btn:is(:hover, :focus-visible) { 
-    background: var(--fundoDestaque2); 
-}
-
-#tabela1{
-    margin-top: 1%;
-    margin-bottom: 4%;
-}
- #tabela2{
-    margin-top: 1%;
-    margin-bottom: 3%;
-}
-#tabela3{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-#tabela4{
-    margin-top: 0%;
-    margin-bottom: 4%;
+.tab-btn:is(:hover, :focus-visible) {
+  background: var(--fundoDestaque2);
 }
 
+#tabela1 {
+  margin-top: 1%;
+  margin-bottom: 4%;
+}
+#tabela2 {
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+#tabela3 {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#tabela4 {
+  margin-top: 0%;
+  margin-bottom: 4%;
+}
 
 /*tabelas de dentro*/
-.tab-content {               
-    padding: 30px;
+.tab-content {
+  padding: 30px;
 }
-
 
 /*tabela 1*/
-.tabelas {    
-    display: flex;
-    gap: 30px;
-    /*flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+.tabelas {
+  display: flex;
+  gap: 30px;
+  /*flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
 }
-.img-holder img{
-    width: 450px;
+.img-holder img {
+  width: 450px;
 }
-.about-content{                      /*texto 1 sobre mim*/
-    margin: auto;
-    text-align: center;
+.about-content {
+  /*texto 1 sobre mim*/
+  margin: auto;
+  text-align: center;
 }
-.tab-content .primeiro-title{      /*primeiro titulo*/
-    margin-bottom: 5%;
-    font-size: 2em;
-    color: var(--corturquesa);
+.tab-content .primeiro-title {
+  /*primeiro titulo*/
+  margin-bottom: 5%;
+  font-size: 2em;
+  color: var(--corturquesa);
 }
-.tab-content .section-text{      /*primeiro texto*/
-    font-size: 1.1em;
-    text-align: left;
-    padding: 20px 0px;
+.tab-content .section-text {
+  /*primeiro texto*/
+  font-size: 1.1em;
+  text-align: left;
+  padding: 20px 0px;
 }
-.about-list {                /*a ul*/
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+.about-list {
+  /*a ul*/
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
-.about-content li{
-    list-style: none; /*tirar o icone do type da lista*/
+.about-content li {
+  list-style: none; /*tirar o icone do type da lista*/
 }
-.about-list .nome, .email{
-    font-size: 2em;
-    text-decoration: underline var(--border-light-gray);
-    text-align: left;
+.about-list .nome,
+.email {
+  font-size: 2em;
+  text-decoration: underline var(--border-light-gray);
+  text-align: left;
 }
-.about-list .spantitle{
-    line-height: 2.5;
-    font-size: 1em;
+.about-list .spantitle {
+  line-height: 2.5;
+  font-size: 1em;
 }
-
 
 /*tabela 2*/
-.habilidades{                 /*texto 2 sobre aprendizado*/
-    display: flex;
-    gap: 30px; 
-    /*flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
+.habilidades {
+  /*texto 2 sobre aprendizado*/
+  display: flex;
+  gap: 30px;
+  /*flex-wrap: nowrap; /* Garante que os elementos fiquem em uma linha só */
 }
-.habilidades .textHabilidade{
-    margin: auto;
-    text-align: center;
+.habilidades .textHabilidade {
+  margin: auto;
+  text-align: center;
 }
-.habilid-title{                  /*primeiro titulo*/
-    margin-block-end: 20px; 
-    font-size: 2em;
-    color: var(--corturquesa);
+.habilid-title {
+  /*primeiro titulo*/
+  margin-block-end: 20px;
+  font-size: 2em;
+  color: var(--corturquesa);
 }
-.habilid-text{                  /*texto 1 sobre mim*/
-    font-size: 1.1em;
-    text-align: left;
-    margin: 20px;
-}
-
-.skill-list{
-    margin: 20px;
-}
-.skill-list li{
-    list-style: none; /*tirar o icone do type da lista*/
-}
-.skill-wrapper { /*cada item da lista*/
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-block: 30px 12px;
-}
-.skill-wrapper .span { /*nomes da lista*/
-    font-family: var(--fontFamily-oxanium);
-    font-weight: var(--weight-medium);
+.habilid-text {
+  /*texto 1 sobre mim*/
+  font-size: 1.1em;
+  text-align: left;
+  margin: 20px;
 }
 
-.progress-bar { /*linha*/
-    background-color: var(--border-smoky-black);
-    height: 4px;
+.skill-list {
+  margin: 20px;
 }
-.progress-fill { /*linha*/
-    background-color: var(--corturquesa);
-    height: 100%;
+.skill-list li {
+  list-style: none; /*tirar o icone do type da lista*/
+}
+.skill-wrapper {
+  /*cada item da lista*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 30px 12px;
+}
+.skill-wrapper .span {
+  /*nomes da lista*/
+  font-family: var(--fontFamily-oxanium);
+  font-weight: var(--weight-medium);
 }
 
-.img-holder img{
-    width: 450px;
-    margin: auto;
+.progress-bar {
+  /*linha*/
+  background-color: var(--border-smoky-black);
+  height: 4px;
+}
+.progress-fill {
+  /*linha*/
+  background-color: var(--corturquesa);
+  height: 100%;
 }
 
+.img-holder img {
+  width: 450px;
+  margin: auto;
+}
 
 /*tabela 3 Conhecimentos*/
-.exposição h2{      /*primeiro titulo*/
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: var(--corturquesa);
+.exposição h2 {
+  /*primeiro titulo*/
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--corturquesa);
 }
-.exposição{
-    text-align: center;
-    box-sizing: content-box;
-    margin: auto;
+.exposição {
+  text-align: center;
+  box-sizing: content-box;
+  margin: auto;
 }
-.carrossel-container { /*toda a tabela, junto c os botoes*/
-    position: relative; /*para os botoes*/
-    overflow: hidden;
+.carrossel-container {
+  /*toda a tabela, junto c os botoes*/
+  position: relative; /*para os botoes*/
+  overflow: hidden;
 }
-.cardsCarrossel{  /*todos os conhecimentos*/
-    display: flex;
-    flex-flow: row nowrap;
-    box-sizing: content-box;
-    margin: auto;
-    gap: 15px;
-    scroll-snap-type: x mandatory; /* Scroll grudando no eixo X */
+.cardsCarrossel {
+  /*todos os conhecimentos*/
+  display: flex;
+  flex-flow: row nowrap;
+  box-sizing: content-box;
+  margin: auto;
+  gap: 15px;
+  scroll-snap-type: x mandatory; /* Scroll grudando no eixo X */
 }
-.card{ /*cada conhecimento*/
-    width: 500px; height: 250px;
-    margin: auto;
-    flex-shrink: 0; /* Impede que os cards diminuam */
-    padding: 30px;
-    flex-grow: 1;
-    text-align: left;
-    border-radius: 20px;
+.card {
+  /*cada conhecimento*/
+  width: 500px;
+  height: 250px;
+  margin: auto;
+  flex-shrink: 0; /* Impede que os cards diminuam */
+  padding: 30px;
+  flex-grow: 1;
+  text-align: left;
+  border-radius: 20px;
 }
 .card:hover {
-    background: var(--fundoDestaque2);
+  background: var(--fundoDestaque2);
 }
-.card img{
-    width: 5rem;
+.card img {
+  width: 5rem;
 }
-.card h3{
-    margin: 10px 0px;
-    font-size: 1.5em;
+.card h3 {
+  margin: 10px 0px;
+  font-size: 1.5em;
 }
-.card p{
-    font-weight: 400;
-    font-size: 1.2em;
-    line-height: 130%;
-    color: var(--paragraph);
+.card p {
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 130%;
+  color: var(--paragraph);
 }
 /*botoes para carrossel*/
 .control {
-    position: absolute;
-    background: var(--headerFotter);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 10; /*para ele ficar visivel sempre*/
+  position: absolute;
+  background: var(--headerFotter);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10; /*para ele ficar visivel sempre*/
 }
 .control-left {
-    top: 0; bottom: 0; left: 0; right: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
 }
 .control-right {
-    top: 0; bottom: 0; left: auto; right: 0;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
 }
 
 /*ver mais*/
-.exposição .btnGithub{ 
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    margin-top: 40px;
-    font-size: 1.2em;
+.exposição .btnGithub {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  font-size: 1.2em;
 }
-.exposição .btnGithub span{
-    color: white;
-    cursor: none;
+.exposição .btnGithub span {
+  color: white;
+  cursor: none;
 }
-.exposição .btnGithub span:hover{
-    text-decoration: underline;
+.exposição .btnGithub span:hover {
+  text-decoration: underline;
 }
-
-
 
 /*tabela 4*/
-.projetos h2{      /*primeiro titulo*/
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: var(--corturquesa);
+.projetos h2 {
+  /*primeiro titulo*/
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--corturquesa);
 }
-.projetos{
-    text-align: center;
+.projetos {
+  text-align: center;
 }
-.projetos .cardsProjetos{  /*tds os projetos*/
-    display: ruby;
-    margin-bottom: 5%; margin: 0%;
+.projetos .cardsProjetos {
+  /*tds os projetos*/
+  display: ruby;
+  margin-bottom: 5%;
+  margin: 0%;
 }
-.cardsProjetos .proj{ /*cada projeto*/
-    flex: auto;
-    text-align: center;
-    margin: 10px;
+.cardsProjetos .proj {
+  /*cada projeto*/
+  flex: auto;
+  text-align: center;
+  margin: 10px;
 }
-.proj img{
-    width: 500px;
-    border-radius: 10px;
+.proj img {
+  width: 500px;
+  border-radius: 10px;
 }
 
 /*parte de aparecer o titulo em cima da imagem*/
-.service-proj { 
-    position: relative; /*centralizar o texto na imagem*/
+.service-proj {
+  position: relative; /*centralizar o texto na imagem*/
 }
 .service-proj .card-proj {
-    margin-inline: auto;
-    transition: var(--transition-1);
+  margin-inline: auto;
+  transition: var(--transition-1);
 }
-.proj a{
-    color: var(--corturquesa);
-    text-decoration: none;
-    cursor: wait;
+.proj a {
+  color: var(--corturquesa);
+  text-decoration: none;
+  cursor: wait;
 }
 .service-proj .card-title {
-    position: absolute;
-    top: 50%; /*alinhar no meio da imagem*/
-    left: 50%; /*alinhar no meio da imagem*/
-    transform: translate(-50%, -100%);
-    color: var(--text-white);
-    font-size: 1.8em;
-    font-weight: var(--weight-regular);
-    line-height: 1.3;
-    opacity: 0; /*deixar o texto em baixo da imagem*/
-    transition: var(--transition-1);
+  position: absolute;
+  top: 50%; /*alinhar no meio da imagem*/
+  left: 50%; /*alinhar no meio da imagem*/
+  transform: translate(-50%, -100%);
+  color: var(--text-white);
+  font-size: 1.8em;
+  font-weight: var(--weight-regular);
+  line-height: 1.3;
+  opacity: 0; /*deixar o texto em baixo da imagem*/
+  transition: var(--transition-1);
 }
 .service-proj:is(:hover, :focus-visible) .card-title {
-    opacity: 1; /*mover o texto aparecer em cima da imagem*/
-    transform: translate(-50%, -50%);
+  opacity: 1; /*mover o texto aparecer em cima da imagem*/
+  transform: translate(-50%, -50%);
 }
-.service-proj:is(:hover, :focus-visible) .card-proj { 
-    opacity: 0.1; /*para sumir a imagem, enquanto mostra o texto*/
+.service-proj:is(:hover, :focus-visible) .card-proj {
+  opacity: 0.1; /*para sumir a imagem, enquanto mostra o texto*/
 }
-
-
 
 footer .scroll-top {
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
 }
 #botao-top {
-    cursor: pointer;
+  cursor: pointer;
 }
-#botao-top img{
-    width: 40px;
-}
-
-
-footer{
-    text-align: center;    
-    color: white;
-    background-color: var(--headerFotter);
-    padding: 14px;
+#botao-top img {
+  width: 40px;
 }
 
-
-
+footer {
+  text-align: center;
+  color: white;
+  background-color: var(--headerFotter);
+  padding: 14px;
+}
