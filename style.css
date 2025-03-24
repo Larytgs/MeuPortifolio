@@ -206,7 +206,7 @@ figure #img:hover {
 figcaption {
   position: absolute; /*para o figcaption fique em cima da imagem*/
   top: 89%; /*alinhar em baixo da imagem*/
-  left: 25%; /*alinhar no meio da imagem*/
+  left: 20%; /*alinhar no meio da imagem*/
 
   min-width: max-content;
   color: rgb(184, 183, 183);
