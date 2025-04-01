@@ -65,7 +65,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgba(0, 255, 255, 0.5); /* Cor turquesa com transparência */
+  background-color: #00ffff80;
   position: absolute;
   pointer-events: none; /* Evita interferência com cliques */
   transform: translate(-50%, -50%);
